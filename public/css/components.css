@@ -1,0 +1,2035 @@
+/* Shared component styles will live here. */
+/* =========================================================
+   ROADREADY HEADER
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   TOP UTILITY BAR
+   --------------------------------------------------------- */
+
+.rr-topbar {
+    background: var(--rr-dark);
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 12px;
+}
+
+.rr-topbar-inner {
+    min-height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rr-topbar-message {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.rr-topbar-message i {
+    font-size: 13px;
+    color: var(--rr-primary);
+}
+
+.rr-topbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rr-topbar-links a {
+    color: rgba(255, 255, 255, 0.72);
+
+    transition: color 0.2s ease;
+}
+
+.rr-topbar-links a:hover {
+    color: var(--rr-white);
+}
+
+
+/* ---------------------------------------------------------
+   MAIN NAVBAR
+   --------------------------------------------------------- */
+
+.rr-navbar {
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+
+    background: var(--rr-white);
+
+    border-bottom: 1px solid var(--rr-border);
+}
+
+.rr-navbar-inner {
+    position: relative;
+
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------------------------------------------
+   LOGO
+   --------------------------------------------------------- */
+
+.rr-logo {
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.rr-logo-mark {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--rr-primary);
+    color: var(--rr-white);
+
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+.rr-logo-text {
+    color: var(--rr-dark);
+
+    font-size: 19px;
+    font-weight: 800;
+
+    letter-spacing: -0.6px;
+}
+
+.rr-logo-text span {
+    color: var(--rr-primary);
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
+
+.rr-nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rr-nav-link {
+    min-height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 0 11px;
+
+    border-radius: 6px;
+
+    color: var(--rr-text-muted);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.rr-nav-link:hover {
+    color: var(--rr-dark);
+    background: var(--rr-light);
+}
+
+.rr-nav-link.active {
+    color: var(--rr-dark);
+}
+
+.rr-nav-dropdown i {
+    font-size: 10px;
+}
+
+.rr-deals-link {
+    color: var(--rr-primary);
+}
+
+.rr-deals-link:hover {
+    color: var(--rr-primary-dark);
+}
+
+
+/* ---------------------------------------------------------
+   SEARCH ICON
+   --------------------------------------------------------- */
+
+.rr-search-icon-button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: transparent;
+    color: var(--rr-text);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.rr-search-icon-button:hover {
+    color: var(--rr-primary);
+    background: var(--rr-light);
+}
+
+/* ---------------------------------------------------------
+   ACTIONS
+   --------------------------------------------------------- */
+
+.rr-actions {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    margin-left: 4px;
+}
+.rr-action {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: var(--rr-text);
+
+    font-size: 18px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.rr-action:hover {
+    color: var(--rr-primary);
+    background: var(--rr-light);
+}
+
+
+/* ---------------------------------------------------------
+   CART
+   --------------------------------------------------------- */
+
+.rr-cart-count {
+    position: absolute;
+
+    top: 2px;
+    right: 1px;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--rr-primary);
+    color: var(--rr-white);
+
+    border: 2px solid var(--rr-white);
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE MENU
+   --------------------------------------------------------- */
+
+.rr-mobile-menu {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: transparent;
+    color: var(--rr-dark);
+
+    font-size: 21px;
+
+    cursor: pointer;
+}
+
+.rr-mobile-menu:hover {
+    background: var(--rr-light);
+}
+
+/* =========================================================
+   MOBILE OFF-CANVAS
+   ========================================================= */
+
+.rr-mobile-overlay {
+    position: fixed;
+    inset: 0;
+    top: 112px;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 998;
+}
+
+.rr-mobile-drawer {
+    position: fixed;
+
+    top: 112px;
+    right: 0;
+
+    width: min(88vw, 360px);
+    height: calc(100vh - 112px);
+
+    background: var(--rr-white);
+
+    transform: translateX(100%);
+
+    transition: transform 0.3s ease;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.12);
+
+    overflow-y: auto;
+}
+
+
+/* Open state */
+
+.rr-mobile-drawer.is-open {
+    transform: translateX(0);
+}
+
+.rr-mobile-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Drawer header */
+
+.rr-mobile-drawer-header {
+    min-height: 72px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--rr-border);
+}
+
+.rr-mobile-close {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: var(--rr-light);
+    color: var(--rr-dark);
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* Main navigation */
+
+.rr-mobile-nav {
+    padding: 12px 16px;
+}
+
+.rr-mobile-nav a {
+    min-height: 52px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 7px;
+
+    color: var(--rr-text);
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.rr-mobile-nav a:hover {
+    background: var(--rr-light);
+}
+
+.rr-mobile-nav a i {
+    color: var(--rr-text-muted);
+    font-size: 12px;
+}
+
+.rr-mobile-nav .mobile-deals {
+    color: var(--rr-primary);
+}
+
+
+/* Divider */
+
+.rr-mobile-divider {
+    height: 1px;
+
+    margin: 4px 20px;
+
+    background: var(--rr-border);
+}
+
+
+/* Secondary links */
+
+.rr-mobile-secondary {
+    padding: 12px 20px;
+}
+
+.rr-mobile-secondary a {
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--rr-text-muted);
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rr-mobile-secondary a i {
+    width: 20px;
+
+    color: var(--rr-text);
+
+    font-size: 17px;
+}
+
+
+/* Help */
+
+.rr-mobile-help {
+    margin-top: auto;
+
+    padding: 20px;
+
+    border-top: 1px solid var(--rr-border);
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: 13px;
+}
+
+.rr-mobile-help span {
+    color: var(--rr-text-muted);
+}
+
+.rr-mobile-help a {
+    color: var(--rr-primary);
+    font-weight: 700;
+}
+
+/* =========================================================
+   TRUST STRIP
+   ========================================================= */
+
+.rr-trust-strip {
+    width: 100%;
+    background: var(--rr-white);
+    border-bottom: 1px solid var(--rr-border);
+}
+
+
+.rr-trust-inner {
+    width: min(100% - 64px, 1280px);
+    min-height: 78px;
+
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.rr-trust-item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 16px;
+}
+
+
+.rr-trust-item > i {
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--rr-light);
+    color: var(--rr-primary);
+
+    font-size: 16px;
+}
+
+
+.rr-trust-item div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.rr-trust-item strong {
+    color: var(--rr-dark);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.rr-trust-item span {
+    color: var(--rr-text-muted);
+
+    font-size: 9px;
+
+    white-space: nowrap;
+}
+
+
+.rr-trust-divider {
+    display: none;
+}
+
+/* =========================================================
+   SHOP BY CATEGORY
+   ========================================================= */
+
+.rr-categories {
+    padding: 64px 0;
+    background: var(--rr-background);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.rr-section-header {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+    margin-bottom: 36px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.rr-section-eyebrow {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--rr-primary);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.rr-section-header h2 {
+    margin: 0;
+
+    color: var(--rr-dark);
+
+    font-size: 26px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+
+.rr-section-header p {
+    margin: 7px 0 0;
+
+    color: var(--rr-text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   VIEW ALL BUTTON
+   ========================================================= */
+
+.rr-section-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+
+    padding: 10px 15px;
+
+    border: 1px solid var(--rr-border);
+    border-radius: 8px;
+
+    background: var(--rr-white);
+
+    color: var(--rr-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+
+.rr-section-link:hover {
+    gap: 11px;
+
+    border-color: var(--rr-primary);
+
+    background: var(--rr-primary);
+
+    color: var(--rr-white);
+}
+
+
+/* =========================================================
+   CATEGORY GRID
+   ========================================================= */
+
+.rr-category-grid {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CATEGORY CARD
+   ========================================================= */
+
+.rr-category-card {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    min-width: 0;
+
+    background: var(--rr-white);
+
+    border: 1px solid var(--rr-border);
+    border-radius: 14px;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.rr-category-card:hover {
+    transform: translateY(-4px);
+
+    border-color: transparent;
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   CATEGORY IMAGE
+   ========================================================= */
+
+.rr-category-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1.45 / 1;
+
+    overflow: hidden;
+
+    background: var(--rr-light);
+}
+
+
+.rr-category-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.rr-category-card:hover .rr-category-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   CATEGORY CARD CONTENT
+   ========================================================= */
+
+.rr-category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 18px 18px 20px;
+}
+
+
+.rr-category-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--rr-text-muted);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.rr-category-content h3 {
+    margin: 0;
+
+    color: var(--rr-dark);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CATEGORY ARROW
+   ========================================================= */
+
+.rr-category-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid var(--rr-border);
+    border-radius: 50%;
+
+    color: var(--rr-dark);
+
+    font-size: 13px;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.rr-category-card:hover .rr-category-arrow {
+    background: var(--rr-primary);
+
+    border-color: var(--rr-primary);
+
+    color: var(--rr-white);
+}
+
+
+/* =========================================================
+   FEATURED PRODUCTS
+   ========================================================= */
+
+.rr-featured-products {
+    padding: 80px 0;
+
+    background: var(--rr-background);
+}
+
+
+/* ---------------------------------------------------------
+   Product Grid
+   --------------------------------------------------------- */
+
+.rr-product-grid {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+/* ---------------------------------------------------------
+   Product Card
+   --------------------------------------------------------- */
+
+.rr-product-card {
+    position: relative;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: var(--rr-white);
+
+    border: 1px solid var(--rr-border);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.rr-product-card:hover {
+    transform: translateY(-4px);
+
+    border-color: transparent;
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   Product Image
+   --------------------------------------------------------- */
+
+.rr-product-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: var(--rr-light);
+}
+
+
+.rr-product-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.rr-product-card:hover .rr-product-image img {
+    transform: scale(1.04);
+}
+
+
+/* ---------------------------------------------------------
+   Product Badge
+   --------------------------------------------------------- */
+
+.rr-product-badge {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    z-index: 2;
+
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 22px;
+
+    padding: 0 8px;
+
+    border-radius: 4px;
+
+    background: var(--rr-primary);
+
+    color: var(--rr-white);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* ---------------------------------------------------------
+   Wishlist
+   --------------------------------------------------------- */
+
+.rr-product-wishlist {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 2;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--rr-border);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    color: var(--rr-dark);
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.rr-product-wishlist:hover {
+    background: var(--rr-primary);
+
+    border-color: var(--rr-primary);
+
+    color: var(--rr-white);
+
+    transform: scale(1.05);
+}
+
+
+/* ---------------------------------------------------------
+   Product Content
+   --------------------------------------------------------- */
+
+.rr-product-content {
+    padding: 17px 17px 18px;
+}
+
+
+/* Category */
+
+.rr-product-category {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--rr-text-muted);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* Product name */
+
+.rr-product-content h3 {
+    margin: 0;
+
+    min-height: 42px;
+
+    color: var(--rr-dark);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   Rating
+   --------------------------------------------------------- */
+
+.rr-product-rating {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 10px;
+}
+
+
+.rr-stars {
+    color: var(--rr-primary);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+.rr-rating-count {
+    color: var(--rr-text-muted);
+
+    font-size: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   Product Bottom
+   --------------------------------------------------------- */
+
+.rr-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+
+/* Price */
+
+.rr-product-price {
+    display: flex;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.rr-current-price {
+    color: var(--rr-dark);
+
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+.rr-old-price {
+    color: var(--rr-text-muted);
+
+    font-size: 11px;
+
+    text-decoration: line-through;
+}
+
+
+/* ---------------------------------------------------------
+   Add to Cart
+   --------------------------------------------------------- */
+
+.rr-add-cart {
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--rr-border);
+
+    border-radius: 50%;
+
+    background: var(--rr-white);
+
+    color: var(--rr-dark);
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.rr-add-cart:hover {
+    background: var(--rr-primary);
+
+    border-color: var(--rr-primary);
+
+    color: var(--rr-white);
+
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   PROMOTIONAL BANNER
+   ========================================================= */
+
+.rr-promo-banner {
+    padding: 80px 0;
+
+    background: var(--rr-background);
+}
+
+
+/* ---------------------------------------------------------
+   Promo Card
+   --------------------------------------------------------- */
+
+.rr-promo-card {
+    position: relative;
+
+    width: calc(100% - 64px);
+
+    min-height: 360px;
+
+    margin-inline: auto;
+
+    display: flex;
+    align-items: stretch;
+
+    overflow: hidden;
+
+    background: var(--rr-dark);
+
+    border-radius: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   Content
+   --------------------------------------------------------- */
+
+.rr-promo-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 52%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 55px 50px;
+}
+
+
+.rr-promo-eyebrow {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--rr-primary);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+}
+
+
+.rr-promo-content h2 {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: var(--rr-white);
+
+    font-size: 38px;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.rr-promo-content h2 span {
+    display: block;
+
+    color: var(--rr-primary);
+}
+
+
+.rr-promo-content p {
+    max-width: 460px;
+
+    margin: 16px 0 24px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   Button
+   --------------------------------------------------------- */
+
+.rr-promo-button {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px 18px;
+
+    background: var(--rr-primary);
+
+    border-radius: 6px;
+
+    color: var(--rr-white);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        gap 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.rr-promo-button:hover {
+    gap: 13px;
+
+    transform: translateY(-2px);
+
+    background: var(--rr-primary-dark);
+
+    color: var(--rr-white);
+}
+
+
+/* ---------------------------------------------------------
+   Image
+   --------------------------------------------------------- */
+
+.rr-promo-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 55%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+.rr-promo-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--rr-dark) 0%,
+            rgba(0, 0, 0, 0.55) 20%,
+            rgba(0, 0, 0, 0.05) 65%
+        );
+}
+
+
+.rr-promo-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* =========================================================
+   WHY ROADREADY
+   ========================================================= */
+
+.rr-why-roadready {
+    padding: 80px 0;
+
+    background: var(--rr-background);
+}
+
+
+/* ---------------------------------------------------------
+   Section Header
+   --------------------------------------------------------- */
+
+.rr-why-roadready .rr-section-header {
+    margin-bottom: 36px;
+}
+
+
+/* ---------------------------------------------------------
+   Benefits Grid
+   --------------------------------------------------------- */
+
+.rr-benefits-grid {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* ---------------------------------------------------------
+   Benefit Card
+   --------------------------------------------------------- */
+
+.rr-benefit-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: 26px 22px 24px;
+
+    background: var(--rr-white);
+
+    border: 1px solid var(--rr-border);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.rr-benefit-card:hover {
+    transform: translateY(-4px);
+
+    border-color: transparent;
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ---------------------------------------------------------
+   Icon
+   --------------------------------------------------------- */
+
+.rr-benefit-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    background: var(--rr-light);
+
+    color: var(--rr-primary);
+
+    font-size: 17px;
+}
+
+
+/* ---------------------------------------------------------
+   Content
+   --------------------------------------------------------- */
+
+.rr-benefit-content h3 {
+    margin: 0;
+
+    color: var(--rr-dark);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.rr-benefit-content p {
+    margin: 9px 0 0;
+
+    color: var(--rr-text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+.rr-newsletter {
+    padding: 80px 0;
+
+    background: var(--rr-background);
+}
+
+
+/* ---------------------------------------------------------
+   Newsletter Card
+   --------------------------------------------------------- */
+
+.rr-newsletter-card {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 42px 46px;
+
+    background: var(--rr-dark);
+
+    border-radius: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   Content
+   --------------------------------------------------------- */
+
+.rr-newsletter-content {
+    max-width: 520px;
+}
+
+
+.rr-newsletter-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--rr-primary);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+}
+
+
+.rr-newsletter-content h2 {
+    margin: 0;
+
+    color: var(--rr-white);
+
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.6px;
+}
+
+
+.rr-newsletter-content p {
+    max-width: 470px;
+
+    margin: 10px 0 0;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   Form
+   --------------------------------------------------------- */
+
+.rr-newsletter-form {
+    width: 390px;
+
+    display: flex;
+
+    flex-shrink: 0;
+}
+
+
+.rr-newsletter-form input {
+    min-width: 0;
+    flex: 1;
+
+    height: 44px;
+
+    padding: 0 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-right: 0;
+
+    border-radius: 6px 0 0 6px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: var(--rr-white);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    transition: border-color 0.2s ease;
+}
+
+
+.rr-newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+.rr-newsletter-form input:focus {
+    border-color: var(--rr-primary);
+}
+
+
+.rr-newsletter-form button {
+    height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 16px;
+
+    border: 1px solid var(--rr-primary);
+
+    border-radius: 0 6px 6px 0;
+
+    background: var(--rr-primary);
+
+    color: var(--rr-white);
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        gap 0.2s ease;
+}
+
+
+.rr-newsletter-form button:hover {
+    gap: 10px;
+
+    background: var(--rr-primary-dark);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.rr-footer {
+    padding-top: 65px;
+
+    background: var(--rr-dark);
+
+    color: var(--rr-white);
+}
+
+
+/* ---------------------------------------------------------
+   Footer Main
+   --------------------------------------------------------- */
+
+.rr-footer-main {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.7fr repeat(3, 1fr);
+
+    gap: 50px;
+
+    padding-bottom: 55px;
+}
+
+
+/* ---------------------------------------------------------
+   Brand
+   --------------------------------------------------------- */
+
+.rr-footer-brand {
+    max-width: 300px;
+}
+
+
+.rr-footer-logo {
+    display: inline-block;
+
+    color: var(--rr-white);
+
+    font-size: 26px;
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+
+    text-decoration: none;
+}
+
+
+.rr-footer-brand p {
+    margin: 14px 0 20px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   Socials
+   --------------------------------------------------------- */
+
+.rr-footer-socials {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.rr-footer-socials a {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.rr-footer-socials a:hover {
+    background: var(--rr-primary);
+
+    border-color: var(--rr-primary);
+
+    color: var(--rr-white);
+}
+
+
+/* ---------------------------------------------------------
+   Footer Columns
+   --------------------------------------------------------- */
+
+.rr-footer-column h3 {
+    margin: 3px 0 17px;
+
+    color: var(--rr-white);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+.rr-footer-column ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.rr-footer-column a {
+    color: rgba(255, 255, 255, 0.52);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+
+.rr-footer-column a:hover {
+    padding-left: 3px;
+
+    color: var(--rr-white);
+}
+
+
+/* ---------------------------------------------------------
+   Footer Bottom
+   --------------------------------------------------------- */
+
+.rr-footer-bottom {
+    width: calc(100% - 64px);
+
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.rr-footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 11px;
+}
+
+
+.rr-footer-payment {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 11px;
+}
+
+
+.rr-footer-payment i {
+    font-size: 14px;
+}
+
+/* =========================================================
+   NOTIFICATION
+   ========================================================= */
+
+.rr-notification {
+
+    position: fixed;
+
+    top: 90px;
+    right: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 18px;
+
+    background: #111;
+    color: #fff;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.18);
+
+    opacity: 0;
+
+    transform:
+        translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+    z-index: 9999;
+}
+
+
+.rr-notification.show {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.rr-notification i {
+
+    font-size: 17px;
+
+}
+/* =========================================================
+   ROADREADY FINAL UX: CATEGORY MENU / BIKE FINDER / EMPTY STATES
+   ========================================================= */
+.rr-nav-dropdown-wrap{position:relative}
+.rr-nav-dropdown{border:0;background:transparent;cursor:pointer;font:inherit}
+.rr-nav-dropdown-wrap.is-open .rr-nav-dropdown{color:var(--rr-primary)}
+.rr-category-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%, -6px);width:260px;padding:10px;background:var(--rr-white);border:1px solid var(--rr-border);border-radius:12px;box-shadow:0 18px 45px rgba(0,0,0,.12);opacity:0;visibility:hidden;pointer-events:none;transition:.18s ease;z-index:1000}
+.rr-nav-dropdown-wrap.is-open .rr-category-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
+.rr-category-menu a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border-radius:8px;color:var(--rr-dark);text-decoration:none;font-size:12px;font-weight:650}
+.rr-category-menu a:hover{background:var(--rr-light);color:var(--rr-primary)}
+.rr-category-menu-loading,.rr-category-menu-empty{display:block;padding:12px;color:var(--rr-text-muted);font-size:11px}
+.rr-mobile-categories{border-bottom:1px solid var(--rr-border)}
+.rr-mobile-categories summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:14px 0;color:var(--rr-dark);font-size:14px;font-weight:700;cursor:pointer}
+.rr-mobile-categories summary::-webkit-details-marker{display:none}
+.rr-mobile-category-list{padding:0 0 8px 12px}
+.rr-mobile-category-list a{display:flex!important;padding:9px 0!important;border:0!important;font-size:12px!important}
+.rr-mobile-category-list a i{display:none}
+
+.rr-bike-finder{padding:78px 0 100px;background:var(--rr-background)}
+.rr-bike-finder-shell{width:min(100% - 64px,1180px);margin:auto}
+.rr-bike-finder-intro{max-width:720px;margin-bottom:30px}
+.rr-bike-finder-intro h1{margin:0;color:var(--rr-dark);font-size:clamp(36px,5vw,58px);line-height:1.05;letter-spacing:-2px}
+.rr-bike-finder-intro p{max-width:650px;margin:16px 0 0;color:var(--rr-text-muted);line-height:1.7}
+.rr-bike-finder-card{padding:26px;background:var(--rr-white);border:1px solid var(--rr-border);border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.06)}
+.rr-bike-finder-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rr-bike-finder-fields label,.rr-bike-admin-form label{display:flex;flex-direction:column;gap:7px;color:var(--rr-dark);font-size:11px;font-weight:700}
+.rr-bike-finder-fields select,.rr-bike-admin-form input,.rr-bike-admin-form select{height:44px;padding:0 12px;border:1px solid var(--rr-border);border-radius:8px;background:var(--rr-white);font:inherit;color:var(--rr-dark)}
+.rr-bike-finder-fields select:focus,.rr-bike-admin-form input:focus,.rr-bike-admin-form select:focus{outline:0;border-color:var(--rr-primary);box-shadow:0 0 0 3px rgba(62,87,229,.08)}
+.rr-bike-finder-actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.rr-bike-finder-results{padding-top:70px}
+.rr-bike-finder-results .rr-product-grid{width:100%;margin:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+.rr-empty-page{min-height:65vh;display:grid;place-items:center;padding:70px 24px;background:var(--rr-background)}
+.rr-empty-page-card{width:min(620px,100%);padding:52px 34px;text-align:center;background:var(--rr-white);border:1px solid var(--rr-border);border-radius:18px;box-shadow:0 16px 45px rgba(0,0,0,.06)}
+.rr-empty-page-icon{width:58px;height:58px;margin:22px auto 18px;display:grid;place-items:center;border-radius:50%;background:var(--rr-light);color:var(--rr-primary);font-size:22px}
+.rr-empty-page-card h1{margin:0;color:var(--rr-dark);font-size:32px}
+.rr-empty-page-card p{margin:12px auto 24px;max-width:500px;color:var(--rr-text-muted);line-height:1.7;font-size:13px}
+.rr-empty-page-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+
+.rr-admin-panel{margin:0 0 24px;padding:24px;background:var(--rr-white);border:1px solid var(--rr-border);border-radius:14px}
+.rr-bike-admin-form{display:grid;grid-template-columns:1.2fr 1.5fr .8fr .8fr .9fr auto;gap:12px;align-items:end}
+.rr-bike-admin-form .rr-btn{min-height:44px}
+.rr-admin-panel-header{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:18px}
+.rr-admin-panel-header input{height:40px;padding:0 12px;border:1px solid var(--rr-border);border-radius:8px}
+.rr-admin-table-wrap{overflow:auto}
+.rr-bike-admin-form .rr-btn-secondary{margin-left:6px}
+@media(max-width:900px){
+  .rr-bike-finder-fields{grid-template-columns:1fr}
+  .rr-bike-finder-results .rr-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rr-bike-admin-form{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .rr-category-menu{position:fixed;left:16px;right:16px;top:74px;width:auto;transform:translateY(-6px)}
+  .rr-nav-dropdown-wrap.is-open .rr-category-menu{transform:translateY(0)}
+  .rr-bike-finder-shell{width:calc(100% - 32px)}
+  .rr-bike-finder{padding:55px 0 70px}
+  .rr-bike-finder-card{padding:18px}
+  .rr-bike-finder-results .rr-product-grid{grid-template-columns:1fr}
+  .rr-empty-page-card{padding:38px 20px}
+  .rr-bike-admin-form{grid-template-columns:1fr}
+  .rr-admin-panel-header{align-items:stretch;flex-direction:column}
+}
+
+
+/* Polished application dialogs */
+#rr-alert-root{position:fixed;inset:0;z-index:100000;pointer-events:none}
+.rr-alert-modal{position:fixed;inset:0;display:grid;place-items:center;padding:20px;pointer-events:auto}
+.rr-alert-backdrop{position:absolute;inset:0;background:rgba(12,18,30,.58);backdrop-filter:blur(4px)}
+.rr-alert-dialog{position:relative;width:min(460px,100%);padding:30px;border:1px solid var(--rr-border);border-radius:20px;background:var(--rr-white);box-shadow:0 28px 80px rgba(0,0,0,.24);text-align:center;animation:rrAlertIn .18s ease-out}
+.rr-alert-dialog h2{margin:14px 0 8px;font-size:22px;color:var(--rr-dark)}
+.rr-alert-dialog p{margin:0 auto 22px;max-width:380px;color:var(--rr-text-muted);font-size:14px;line-height:1.65}
+.rr-alert-icon{width:54px;height:54px;margin:auto;display:grid;place-items:center;border-radius:50%;background:var(--rr-light);font-size:22px;color:var(--rr-primary)}
+.rr-alert-icon-error{color:#b42318;background:#fff0ee}.rr-alert-icon-success{color:#18794e;background:#ecfdf3}
+.rr-alert-dialog .rr-alert-ok{min-width:110px}
+.rr-alert-modal.is-closing .rr-alert-dialog{animation:rrAlertOut .16s ease-in forwards}
+@keyframes rrAlertIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes rrAlertOut{to{opacity:0;transform:translateY(8px) scale(.98)}}
+@media(max-width:600px){.rr-mobile-drawer{top:96px;height:calc(100vh - 96px)}.rr-mobile-overlay{top:96px}.rr-alert-dialog{padding:24px 18px;border-radius:16px}.rr-alert-dialog h2{font-size:20px}.rr-alert-dialog p{font-size:14px}}

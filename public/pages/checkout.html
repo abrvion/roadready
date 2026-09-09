@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Checkout | RoadReady</title>
+
+    <meta
+        name="description"
+        content="Complete your RoadReady motorcycle parts and accessories order."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Main Styles -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+    <main>
+
+
+        <!-- =================================================
+             CHECKOUT HEADER
+             ================================================= -->
+
+        <section class="rr-checkout-header">
+
+            <div class="rr-container">
+
+                <span class="rr-section-eyebrow">
+                    CHECKOUT
+                </span>
+
+                <h1>
+                    Complete Your Order
+                </h1>
+
+                <p>
+                    Confirm your delivery details and choose
+                    your preferred payment method.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHECKOUT
+             ================================================= -->
+
+        <section class="rr-checkout">
+
+            <div class="rr-container">
+
+                <div
+                    class="rr-checkout-layout"
+                    id="checkout-layout"
+                >
+
+
+                    <!-- =========================================
+                         CHECKOUT FORM
+                         ========================================= -->
+
+                    <div class="rr-checkout-form">
+
+
+                        <!-- =====================================
+                             CONTACT INFORMATION
+                             ===================================== -->
+
+                        <div class="rr-checkout-card">
+
+                            <div class="rr-checkout-card-header">
+
+                                <div class="rr-checkout-step">
+                                    01
+                                </div>
+
+                                <div>
+
+                                    <h2>
+                                        Contact Information
+                                    </h2>
+
+                                    <p>
+                                        Contact details from your selected address.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-form-grid">
+
+
+                                <div class="rr-form-group">
+
+                                    <label for="full-name">
+                                        Full Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="full-name"
+                                        name="fullName"
+                                        placeholder="Your full name"
+                                        readonly
+                                    >
+
+                                </div>
+
+
+                                <div class="rr-form-group">
+
+                                    <label for="phone">
+                                        Phone Number
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Your phone number"
+                                        readonly
+                                    >
+
+                                </div>
+
+
+                                <div class="rr-form-group rr-form-full">
+
+                                    <label for="email">
+                                        Email Address
+                                        <span>(Optional)</span>
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Your account email"
+                                        readonly
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =====================================
+                             DELIVERY ADDRESS
+                             ===================================== -->
+
+                        <div class="rr-checkout-card">
+
+                            <div class="rr-checkout-card-header">
+
+                                <div>
+
+                                    <div class="rr-checkout-step">
+                                        02
+                                    </div>
+
+                                </div>
+
+                                <div class="rr-checkout-heading">
+
+                                    <h2>
+                                        Delivery Address
+                                    </h2>
+
+                                    <p>
+                                        Choose where your order should be delivered.
+                                    </p>
+
+                                </div>
+
+                                <a
+                                    href="/account/addresses"
+                                    class="rr-checkout-manage-link"
+                                >
+                                    Manage Addresses
+                                </a>
+
+                            </div>
+
+
+                            <div
+                                id="checkout-addresses"
+                                class="rr-checkout-addresses"
+                            >
+                                <!-- Saved addresses rendered here -->
+                            </div>
+
+
+                            <div
+                                id="address-empty"
+                                class="rr-checkout-address-empty"
+                                hidden
+                            >
+
+                                <div class="rr-checkout-address-empty-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+
+                                <h3>
+                                    No Saved Address
+                                </h3>
+
+                                <p>
+                                    Add a delivery address before placing your order.
+                                </p>
+
+                                <a
+                                    href="/account/addresses"
+                                    class="rr-checkout-address-button"
+                                >
+                                    Add Address
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =====================================
+                             DELIVERY METHOD
+                             ===================================== -->
+
+                        <div class="rr-checkout-card">
+
+                            <div class="rr-checkout-card-header">
+
+                                <div class="rr-checkout-step">
+                                    03
+                                </div>
+
+                                <div>
+
+                                    <h2>
+                                        Delivery Method
+                                    </h2>
+
+                                    <p>
+                                        Choose how you'd like to receive your order.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-delivery-options">
+
+
+                                <!-- STANDARD DELIVERY -->
+
+                                <label class="rr-delivery-option rr-delivery-option-selected">
+
+                                    <input
+                                        type="radio"
+                                        name="delivery"
+                                        value="standard"
+                                        checked
+                                    >
+
+                                    <span class="rr-radio-custom"></span>
+
+                                    <span class="rr-delivery-option-content">
+
+                                        <strong>
+                                            Standard Delivery
+                                        </strong>
+
+                                        <small>
+                                            2–5 business days
+                                        </small>
+
+                                    </span>
+
+                                    <strong class="rr-delivery-price">
+                                        ৳100
+                                    </strong>
+
+                                </label>
+
+
+                                <!-- EXPRESS DELIVERY -->
+
+                                <label class="rr-delivery-option rr-delivery-disabled">
+
+                                    <input
+                                        type="radio"
+                                        name="delivery"
+                                        value="express"
+                                        disabled
+                                    >
+
+                                    <span class="rr-radio-custom"></span>
+
+                                    <span class="rr-delivery-option-content">
+
+                                        <strong>
+                                            Express Delivery
+                                        </strong>
+
+                                        <small>
+                                            Coming soon
+                                        </small>
+
+                                    </span>
+
+                                    <strong class="rr-delivery-price">
+                                        ৳180
+                                    </strong>
+
+                                </label>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =====================================
+                             PAYMENT METHOD
+                             ===================================== -->
+
+                        <div class="rr-checkout-card">
+
+                            <div class="rr-checkout-card-header">
+
+                                <div class="rr-checkout-step">
+                                    04
+                                </div>
+
+                                <div>
+
+                                    <h2>
+                                        Payment Method
+                                    </h2>
+
+                                    <p>
+                                        Select your preferred payment option.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-payment-options">
+
+
+                                <!-- CASH ON DELIVERY -->
+
+                                <label class="rr-payment-option rr-payment-option-selected">
+
+                                    <input
+                                        type="radio"
+                                        name="payment"
+                                        value="cod"
+                                        checked
+                                    >
+
+                                    <span class="rr-radio-custom"></span>
+
+                                    <span class="rr-payment-icon">
+                                        <i class="bi bi-cash-stack"></i>
+                                    </span>
+
+                                    <span class="rr-payment-content">
+
+                                        <strong>
+                                            Cash on Delivery
+                                        </strong>
+
+                                        <small>
+                                            Pay when your order arrives.
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+
+                                <!-- ONLINE PAYMENT -->
+
+                                <label class="rr-payment-option rr-payment-disabled">
+
+                                    <input
+                                        type="radio"
+                                        name="payment"
+                                        value="online"
+                                        disabled
+                                    >
+
+                                    <span class="rr-radio-custom"></span>
+
+                                    <span class="rr-payment-icon">
+                                        <i class="bi bi-credit-card"></i>
+                                    </span>
+
+                                    <span class="rr-payment-content">
+
+                                        <strong>
+                                            Online Payment
+                                        </strong>
+
+                                        <small>
+                                            Coming soon
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         ORDER SUMMARY
+                         ========================================= -->
+
+                    <aside class="rr-checkout-summary">
+
+
+                        <div class="rr-checkout-summary-card">
+
+
+                            <h2>
+                                Your Order
+                            </h2>
+
+
+                            <!-- Dynamic Order Items -->
+
+                            <div
+                                class="rr-checkout-items"
+                                id="checkout-items"
+                            >
+                                <!-- Cart items rendered by JavaScript -->
+                            </div>
+
+
+                            <div class="rr-checkout-summary-divider"></div>
+
+
+                            <div class="rr-checkout-summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <strong id="checkout-subtotal">
+                                    ৳0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="rr-checkout-summary-row">
+
+                                <span>
+                                    Delivery
+                                </span>
+
+                                <strong id="checkout-delivery-price">
+                                    ৳100
+                                </strong>
+
+                            </div>
+
+
+                            <div class="rr-checkout-summary-divider"></div>
+
+
+                            <div class="rr-checkout-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong id="checkout-total">
+                                    ৳0
+                                </strong>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="rr-place-order-button"
+                                id="place-order"
+                            >
+
+                                Place Order
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </button>
+
+
+                            <div class="rr-checkout-security">
+
+                                <i class="bi bi-shield-check"></i>
+
+                                <span>
+                                    Your information is securely protected.
+                                </span>
+
+                            </div>
+
+
+                            <p
+                                id="checkout-error"
+                                class="rr-checkout-error"
+                                hidden
+                            ></p>
+
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+
+                <!-- =============================================
+                     LOADING
+                     ============================================= -->
+
+                <div
+                    id="checkout-loading"
+                    class="rr-checkout-loading"
+                >
+
+                    <i class="bi bi-arrow-repeat"></i>
+
+                    <span>
+                        Preparing your checkout...
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/checkout.js"
+    ></script>
+
+</body>
+
+</html>

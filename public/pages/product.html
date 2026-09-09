@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Product | RoadReady</title>
+
+    <meta
+        name="description"
+        content="View motorcycle parts, accessories, riding gear and maintenance products at RoadReady."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Main Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             BREADCRUMB
+             ================================================= -->
+
+        <section class="rr-product-breadcrumb">
+
+            <div class="rr-container">
+
+                <nav aria-label="Breadcrumb">
+
+                    <a href="/">
+                        Home
+                    </a>
+
+                    <i class="bi bi-chevron-right"></i>
+
+                    <a href="/shop">
+                        Shop
+                    </a>
+
+                    <i class="bi bi-chevron-right"></i>
+
+                    <span>
+                        Product
+                    </span>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCT DETAILS
+             ================================================= -->
+
+        <section class="rr-product-details">
+
+            <div class="rr-container">
+
+                <div class="rr-product-layout">
+
+
+                    <!-- =========================================
+                         PRODUCT IMAGES
+                         ========================================= -->
+
+                    <div class="rr-product-gallery">
+
+
+                        <div class="rr-product-main-image">
+
+                            <button
+                                type="button"
+                                class="rr-product-image-wishlist"
+                                aria-label="Add to wishlist"
+                            >
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+
+                            <img
+                                id="product-main-image"
+                                src="/assets/images/products/product-placeholder.svg"
+                                alt="Premium Motorcycle Brake Pads"
+                            >
+
+                        </div>
+
+
+                        <div class="rr-product-thumbnails">
+
+                            <button
+                                type="button"
+                                class="rr-product-thumbnail active"
+                            >
+
+                                <img
+                                    src="/assets/images/products/product-placeholder.svg"
+                                    alt="Product image 1"
+                                >
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="rr-product-thumbnail"
+                            >
+
+                                <img
+                                    src="/assets/images/products/product-placeholder.svg"
+                                    alt="Product image 2"
+                                >
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="rr-product-thumbnail"
+                            >
+
+                                <img
+                                    src="/assets/images/products/product-placeholder.svg"
+                                    alt="Product image 3"
+                                >
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="rr-product-thumbnail"
+                            >
+
+                                <img
+                                    src="/assets/images/products/product-placeholder.svg"
+                                    alt="Product image 4"
+                                >
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         PRODUCT INFORMATION
+                         ========================================= -->
+
+                    <div class="rr-product-info">
+
+
+                        <span class="rr-product-detail-category">
+                            SPARE PARTS
+                        </span>
+
+
+                        <h1 id="product-title">
+                            Premium Motorcycle Brake Pads
+                        </h1>
+
+
+                        <div class="rr-product-detail-rating">
+                            <span class="rr-product-no-rating">Reviews will appear here once customers review this product.</span>
+                        </div>
+
+                        <div class="rr-product-detail-price">
+
+                            <span
+                                id="product-price"
+                                class="rr-current-price"
+                            >
+                                ৳1,250
+                            </span>
+
+                        </div>
+
+
+                        <p class="rr-product-description">
+
+                            High-quality motorcycle brake pads designed
+                            for reliable stopping performance, smooth
+                            braking and long-lasting everyday use.
+
+                        </p>
+
+
+                        <!-- Availability -->
+
+                        <div class="rr-product-availability">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>
+                                In Stock
+                            </span>
+
+                        </div>
+
+
+                        <div class="rr-product-divider"></div>
+
+
+                        <!-- Quantity -->
+
+                        <div class="rr-product-option">
+
+                            <span class="rr-product-option-label">
+                                Quantity
+                            </span>
+
+
+                            <div class="rr-quantity-control">
+
+                                <button
+                                    type="button"
+                                    class="rr-quantity-button"
+                                    id="quantity-minus"
+                                    aria-label="Decrease quantity"
+                                >
+                                    <i class="bi bi-dash"></i>
+                                </button>
+
+
+                                <span
+                                    id="product-quantity"
+                                    class="rr-quantity-value"
+                                >
+                                    1
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    class="rr-quantity-button"
+                                    id="quantity-plus"
+                                    aria-label="Increase quantity"
+                                >
+                                    <i class="bi bi-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Actions -->
+
+                        <div class="rr-product-actions">
+
+                            <button
+                                type="button"
+                                class="rr-add-to-cart-button"
+                                id="add-to-cart"
+                            >
+
+                                <i class="bi bi-bag-plus"></i>
+
+                                Add to Cart
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="rr-buy-now-button"
+                                id="buy-now"
+                            >
+
+                                Buy Now
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Product benefits -->
+
+                        <div class="rr-product-benefits">
+
+
+                            <div class="rr-product-benefit">
+
+                                <div class="rr-product-benefit-icon">
+
+                                    <i class="bi bi-truck"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Fast Delivery
+                                    </strong>
+
+                                    <span>
+                                        Across Bangladesh
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-product-benefit">
+
+                                <div class="rr-product-benefit-icon">
+
+                                    <i class="bi bi-shield-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Genuine Products
+                                    </strong>
+
+                                    <span>
+                                        Quality guaranteed
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-product-benefit">
+
+                                <div class="rr-product-benefit-icon">
+
+                                    <i class="bi bi-arrow-repeat"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Easy Returns
+                                    </strong>
+
+                                    <span>
+                                        Simple return process
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCT INFORMATION TABS
+             ================================================= -->
+
+        <section class="rr-product-information">
+
+            <div class="rr-container">
+
+
+                <div class="rr-product-tabs">
+
+                    <button
+                        type="button"
+                        class="rr-product-tab active"
+                    >
+                        Description
+                    </button>
+
+                    <button
+                        type="button"
+                        class="rr-product-tab"
+                    >
+                        Specifications
+                    </button>
+
+                    <button
+                        type="button"
+                        class="rr-product-tab"
+                    >
+                        Reviews
+                    </button>
+
+                </div>
+
+
+                <div class="rr-product-tab-content">
+
+                    <div class="rr-product-description-content">
+
+                        <h2>
+                            Product Description
+                        </h2>
+
+                        <p>
+                            Designed for riders who expect dependable
+                            performance, these premium motorcycle brake
+                            pads provide consistent braking response
+                            during everyday riding.
+                        </p>
+
+                        <p>
+                            Built with durable materials and designed
+                            for reliable fitment, they are suitable for
+                            riders looking for a quality replacement
+                            component.
+                        </p>
+
+                    </div>
+
+                    <section class="rr-product-reviews" id="product-reviews" hidden>
+                        <div class="rr-review-summary" id="review-summary"></div>
+                        <div id="review-form-container"></div>
+                        <div class="rr-review-list" id="review-list"></div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RELATED PRODUCTS
+             ================================================= -->
+
+        <section class="rr-related-products">
+
+            <div class="rr-container">
+
+
+                <div class="rr-section-header">
+
+                    <div>
+
+                        <span class="rr-section-eyebrow">
+                            YOU MAY ALSO LIKE
+                        </span>
+
+                        <h2>
+                            Related Products
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="/shop"
+                        class="rr-section-link"
+                    >
+                        View All
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div id="related-product-grid"></div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+   <script type="module" src="/js/pages/product.js"></script>
+</body>
+
+</html>

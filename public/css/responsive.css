@@ -1,0 +1,4243 @@
+/* Responsive overrides will live here. */
+/* =========================================================
+   ROADREADY RESPONSIVE HEADER
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .rr-navbar-inner {
+        gap: 16px;
+    }
+
+    .rr-nav-links {
+        gap: 0;
+    }
+
+    .rr-nav-link {
+        padding-inline: 8px;
+        font-size: 12px;
+    }
+
+    .rr-search {
+        max-width: 300px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .rr-navbar-inner {
+        min-height: 70px;
+
+        gap: 8px;
+    }
+
+    .rr-nav-links {
+        display: none;
+    }
+
+    .rr-mobile-menu {
+        display: flex;
+        order: -1;
+    }
+
+    .rr-logo {
+        margin-right: auto;
+    }
+
+    .rr-search-icon-button {
+        margin-left: 0;
+    }
+
+    .rr-actions {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .rr-topbar-links {
+        display: none;
+    }
+
+    .rr-topbar-inner {
+        justify-content: center;
+    }
+
+    .rr-topbar-message {
+        font-size: 11px;
+    }
+
+    .rr-navbar-inner {
+        min-height: 64px;
+    }
+
+    .rr-logo-text {
+        font-size: 16px;
+    }
+
+    .rr-logo-mark {
+        width: 32px;
+        height: 32px;
+    }
+
+    .rr-action {
+        width: 36px;
+        height: 36px;
+
+        font-size: 17px;
+    }
+
+    .rr-search-icon-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .rr-mobile-menu {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .rr-logo-text {
+        font-size: 15px;
+    }
+
+    .rr-action {
+        width: 34px;
+        height: 34px;
+    }
+
+    .rr-action:first-child {
+        display: none;
+    }
+}
+
+/* =========================================================
+   HERO RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-hero {
+        min-height: 500px;
+    }
+
+    .rr-hero-inner {
+        min-height: 500px;
+    }
+
+    .rr-hero-card {
+        width: min(440px, 55%);
+
+        padding: 36px 32px;
+    }
+
+    .rr-hero-title {
+        font-size: 46px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-hero {
+        min-height: 0;
+        display: block;
+        padding-bottom: 32px;
+    }
+
+    .rr-hero-background {
+        position: relative;
+        height: 270px;
+    }
+
+    .rr-hero-inner {
+        width: calc(100% - 40px);
+
+        min-height: 0;
+
+        margin-inline: auto;
+
+        display: block;
+    }
+
+    .rr-hero-card {
+        width: 100%;
+
+        margin-top: -35px;
+        margin-bottom: 0;
+
+        padding: 30px 24px;
+    }
+
+    .rr-hero-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .rr-hero {
+        padding-bottom: 28px;
+    }
+
+    .rr-hero-background {
+        height: 220px;
+    }
+
+    .rr-hero-inner {
+        width: calc(100% - 28px);
+    }
+
+    .rr-hero-card {
+        margin-top: -28px;
+
+        padding: 26px 20px;
+    }
+
+    .rr-hero-title {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .rr-hero-description {
+        margin: 16px 0 20px;
+        font-size: 13px;
+    }
+}
+/* =========================================================
+   TRUST STRIP RESPONSIVE
+   ========================================================= */
+@media (max-width: 1000px) {
+
+    .rr-trust-inner {
+        gap: 14px;
+    }
+
+    .rr-trust-item > i {
+        width: 34px;
+        height: 34px;
+
+        font-size: 15px;
+    }
+
+    .rr-trust-item strong {
+        font-size: 10px;
+    }
+
+    .rr-trust-item span {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-trust-inner {
+        width: calc(100% - 32px);
+
+        min-height: 64px;
+
+        gap: 8px;
+    }
+
+    .rr-trust-item {
+        gap: 6px;
+        padding: 0 8px;
+    }
+
+    .rr-trust-item > i {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .rr-trust-item strong {
+        font-size: 9px;
+    }
+
+    .rr-trust-item span {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+
+    .rr-trust-inner {
+        width: calc(100% - 24px);
+
+        min-height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+
+        justify-content: center;
+        align-items: center;
+
+        column-gap: 8px;
+        row-gap: 18px;
+
+        padding: 16px 8px;
+    }
+
+
+    .rr-trust-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5px;
+
+        padding: 0 4px;
+    }
+
+
+    .rr-trust-item > i {
+        width: 10%;
+        height: 10px;
+
+        flex-shrink: 0;
+
+        font-size: 8px;
+    }
+
+
+    .rr-trust-item strong {
+        font-size: 8px;
+
+        white-space: nowrap;
+    }
+
+
+    .rr-trust-item span {
+        display: none;
+    }
+
+
+    .rr-trust-divider {
+        display: block;
+
+        width: 1px;
+        height: 24px;
+
+        background: var(--rr-border);
+    }
+}
+
+/* =========================================================
+   CATEGORY RESPONSIVENESS
+   ========================================================= */
+@media (max-width: 1000px) {
+
+    .rr-categories {
+        padding: 58px 0;
+    }
+
+
+    .rr-section-header {
+        width: calc(100% - 48px);
+
+        margin-bottom: 30px;
+
+        gap: 20px;
+    }
+
+
+    .rr-section-header h2 {
+        font-size: 25px;
+    }
+
+
+    .rr-section-link {
+        padding: 9px 13px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-category-grid {
+        width: calc(100% - 48px);
+
+        gap: 14px;
+    }
+
+
+    .rr-category-content {
+        padding: 15px;
+    }
+
+
+    .rr-category-content h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-categories {
+        padding: 52px 0;
+    }
+
+
+    .rr-section-header {
+        width: calc(100% - 32px);
+
+        display: block;
+
+        margin-bottom: 26px;
+    }
+
+
+    .rr-section-eyebrow {
+        font-size: 9px;
+    }
+
+
+    .rr-section-header h2 {
+        font-size: 24px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    .rr-section-header p {
+        font-size: 11px;
+    }
+
+
+    .rr-section-link {
+        margin-top: 14px;
+
+        padding: 9px 13px;
+
+        font-size: 14px;
+    }
+
+
+    .rr-category-grid {
+        width: calc(100% - 32px);
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .rr-category-image {
+        aspect-ratio: 1.2 / 1;
+    }
+
+
+    .rr-category-content {
+        padding: 13px;
+    }
+
+
+    .rr-category-label {
+        font-size: 7px;
+    }
+
+
+    .rr-category-content h3 {
+        font-size: 14px;
+    }
+
+
+    .rr-category-arrow {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-categories {
+        padding: 44px 0;
+    }
+
+
+    .rr-section-header {
+        width: calc(100% - 24px);
+
+        margin-bottom: 22px;
+    }
+
+
+    .rr-section-eyebrow {
+        margin-bottom: 6px;
+
+        font-size: 8px;
+    }
+
+
+    .rr-section-header h2 {
+        font-size: 22px;
+
+        letter-spacing: -0.3px;
+    }
+
+
+    .rr-section-header p {
+        margin-top: 6px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-section-link {
+        margin-top: 12px;
+
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-category-grid {
+        width: calc(100% - 24px);
+
+        gap: 10px;
+    }
+
+
+    .rr-category-image {
+        aspect-ratio: 1.1 / 1;
+    }
+
+
+    .rr-category-content {
+        padding: 11px;
+    }
+
+
+    .rr-category-label {
+        margin-bottom: 3px;
+
+        font-size: 6px;
+    }
+
+
+    .rr-category-content h3 {
+        font-size: 13px;
+    }
+
+
+    .rr-category-arrow {
+        width: 27px;
+        height: 27px;
+
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================================
+   FEATURED PRODUCTS RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-featured-products {
+        padding: 64px 0;
+    }
+
+    .rr-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+    .rr-product-content {
+        padding: 15px;
+    }
+
+    .rr-product-content h3 {
+        font-size: 14px;
+    }
+
+    .rr-current-price {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .rr-featured-products {
+        padding: 52px 0;
+    }
+
+    .rr-section-header {
+        align-items: flex-start;
+
+        margin-bottom: 26px;
+    }
+
+    .rr-section-header h2 {
+        font-size: 26px;
+    }
+
+    .rr-section-header p {
+        font-size: 12px;
+    }
+
+    .rr-section-link {
+        margin-top: 4px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-product-grid {
+        width: calc(100% - 32px);
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .rr-product-image {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    .rr-product-content {
+        padding: 13px;
+    }
+
+
+    .rr-product-category {
+        margin-bottom: 5px;
+
+        font-size: 7px;
+    }
+
+
+    .rr-product-content h3 {
+        min-height: 39px;
+
+        font-size: 13px;
+
+        line-height: 1.35;
+    }
+
+
+    .rr-product-rating {
+        margin-top: 8px;
+
+        gap: 5px;
+    }
+
+
+    .rr-stars {
+        font-size: 10px;
+    }
+
+
+    .rr-rating-count {
+        font-size: 9px;
+    }
+
+
+    .rr-product-bottom {
+        margin-top: 12px;
+    }
+
+
+    .rr-current-price {
+        font-size: 15px;
+    }
+
+
+    .rr-old-price {
+        font-size: 10px;
+    }
+
+
+    .rr-product-wishlist {
+        top: 9px;
+        right: 9px;
+
+        width: 31px;
+        height: 31px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-product-badge {
+        top: 9px;
+        left: 9px;
+
+        min-height: 20px;
+
+        padding: 0 7px;
+
+        font-size: 7px;
+    }
+
+
+    .rr-add-cart {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .rr-featured-products {
+        padding: 44px 0;
+    }
+
+
+    .rr-section-header {
+        display: block;
+    }
+
+
+    .rr-section-header h2 {
+        font-size: 24px;
+    }
+
+
+    .rr-section-header p {
+        margin-top: 6px;
+    }
+
+
+    .rr-section-link {
+        margin-top: 14px;
+    }
+
+
+    .rr-product-grid {
+        gap: 10px;
+    }
+
+
+    .rr-product-content {
+        padding: 11px;
+    }
+
+
+    .rr-product-content h3 {
+        min-height: 36px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-product-category {
+        font-size: 6.5px;
+    }
+
+
+    .rr-stars {
+        font-size: 9px;
+    }
+
+
+    .rr-rating-count {
+        font-size: 8px;
+    }
+
+
+    .rr-current-price {
+        font-size: 14px;
+    }
+
+
+    .rr-old-price {
+        font-size: 9px;
+    }
+
+
+    .rr-product-bottom {
+        gap: 7px;
+    }
+
+
+    .rr-add-cart {
+        width: 29px;
+        height: 29px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-product-wishlist {
+        width: 28px;
+        height: 28px;
+
+        font-size: 11px;
+    }
+
+    .rr-product-grid {
+        width: calc(100% - 20px);
+
+        gap: 10px;
+    }
+
+}
+
+/* =========================================================
+   PROMOTIONAL BANNER RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-promo-banner {
+        padding: 64px 0;
+    }
+
+
+    .rr-promo-card {
+        width: calc(100% - 64px);
+
+        min-height: 330px;
+    }
+
+
+    .rr-promo-content {
+        width: 58%;
+
+        padding: 45px 40px;
+    }
+
+
+    .rr-promo-content h2 {
+        font-size: 32px;
+    }
+
+
+    .rr-promo-image {
+        width: 55%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .rr-promo-banner {
+        padding: 52px 0;
+    }
+
+
+    .rr-promo-card {
+        width: calc(100% - 32px);
+
+        min-height: 480px;
+
+        display: block;
+    }
+
+
+    .rr-promo-content {
+        width: 100%;
+
+        min-height: 480px;
+
+        justify-content: flex-end;
+
+        padding: 35px 28px;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.05) 15%,
+                rgba(0, 0, 0, 0.82) 70%
+            );
+    }
+
+
+    .rr-promo-content h2 {
+        font-size: 28px;
+
+        letter-spacing: -0.6px;
+    }
+
+
+    .rr-promo-content p {
+        margin-top: 12px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-promo-image {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .rr-promo-image::after {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.05) 15%,
+                rgba(0, 0, 0, 0.82) 75%
+            );
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .rr-promo-banner {
+        padding: 44px 0;
+    }
+
+
+    .rr-promo-card {
+        width: calc(100% - 20px);
+
+        min-height: 430px;
+    }
+
+
+    .rr-promo-content {
+        min-height: 430px;
+
+        padding: 28px 20px;
+    }
+
+
+    .rr-promo-eyebrow {
+        margin-bottom: 9px;
+
+        font-size: 8px;
+    }
+
+
+    .rr-promo-content h2 {
+        font-size: 24px;
+    }
+
+
+    .rr-promo-content p {
+        margin: 10px 0 18px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    .rr-promo-button {
+        padding: 11px 15px;
+
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================================
+   WHY ROADREADY RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-why-roadready {
+        padding: 64px 0;
+    }
+
+
+    .rr-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+
+    .rr-benefit-card {
+        padding: 22px 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .rr-why-roadready {
+        padding: 52px 0;
+    }
+
+
+    .rr-why-roadready .rr-section-header {
+        margin-bottom: 26px;
+    }
+
+
+    .rr-benefits-grid {
+        width: calc(100% - 32px);
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .rr-benefit-card {
+        padding: 18px 16px;
+    }
+
+
+    .rr-benefit-icon {
+        width: 36px;
+        height: 36px;
+
+        margin-bottom: 15px;
+
+        border-radius: 8px;
+
+        font-size: 14px;
+    }
+
+
+    .rr-benefit-content h3 {
+        font-size: 14px;
+    }
+
+
+    .rr-benefit-content p {
+        margin-top: 7px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .rr-why-roadready {
+        padding: 44px 0;
+    }
+
+
+    .rr-benefits-grid {
+        width: calc(100% - 20px);
+
+        gap: 10px;
+    }
+
+
+    .rr-benefit-card {
+        padding: 15px 12px;
+    }
+
+
+    .rr-benefit-icon {
+        width: 32px;
+        height: 32px;
+
+        margin-bottom: 12px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-benefit-content h3 {
+        font-size: 12px;
+    }
+
+
+    .rr-benefit-content p {
+        font-size: 10px;
+
+        line-height: 1.55;
+    }
+
+}
+
+/* =========================================================
+   NEWSLETTER RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-newsletter {
+        padding: 64px 0;
+    }
+
+
+    .rr-newsletter-card {
+        width: calc(100% - 64px);
+
+        gap: 30px;
+
+        padding: 36px;
+    }
+
+
+    .rr-newsletter-content h2 {
+        font-size: 26px;
+    }
+
+
+    .rr-newsletter-form {
+        width: 340px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .rr-newsletter {
+        padding: 52px 0;
+    }
+
+
+    .rr-newsletter-card {
+        width: calc(100% - 32px);
+
+        display: block;
+
+        padding: 32px 26px;
+    }
+
+
+    .rr-newsletter-content {
+        max-width: none;
+    }
+
+
+    .rr-newsletter-content h2 {
+        font-size: 25px;
+    }
+
+
+    .rr-newsletter-content p {
+        font-size: 11px;
+    }
+
+
+    .rr-newsletter-form {
+        width: 100%;
+
+        margin-top: 22px;
+    }
+
+}
+@media (max-width: 480px) {
+
+    .rr-newsletter {
+        padding: 44px 0;
+    }
+
+
+    .rr-newsletter-card {
+        width: calc(100% - 20px);
+
+        padding: 26px 20px;
+    }
+
+
+    .rr-newsletter-eyebrow {
+        font-size: 8px;
+    }
+
+
+    .rr-newsletter-content h2 {
+        font-size: 22px;
+    }
+
+
+    .rr-newsletter-content p {
+        font-size: 10px;
+    }
+
+
+    .rr-newsletter-form {
+        margin-top: 18px;
+    }
+
+
+    .rr-newsletter-form input {
+        height: 40px;
+
+        padding: 0 11px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-newsletter-form button {
+        height: 40px;
+
+        padding: 0 12px;
+
+        font-size: 9px;
+    }
+
+}
+
+/* =========================================================
+   FOOTER RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-footer {
+        padding-top: 58px;
+    }
+
+
+    .rr-footer-main {
+        grid-template-columns: 1.5fr repeat(3, minmax(0, 1fr));
+
+        gap: 34px;
+    }
+
+
+    .rr-footer-logo {
+        font-size: 25px;
+    }
+
+
+    .rr-footer-brand p {
+        font-size: 12.5px;
+    }
+
+
+    .rr-footer-column h3 {
+        font-size: 12px;
+    }
+
+
+    .rr-footer-column a {
+        font-size: 11.5px;
+    }
+
+
+    .rr-footer-bottom p {
+        font-size: 10.5px;
+    }
+
+
+    .rr-footer-payment {
+        font-size: 10.5px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-footer {
+        padding-top: 48px;
+    }
+
+
+    .rr-footer-main {
+        width: calc(100% - 32px);
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 34px 28px;
+
+        padding-bottom: 42px;
+    }
+
+
+    .rr-footer-brand {
+        grid-column: 1 / -1;
+
+        max-width: 420px;
+    }
+
+
+    .rr-footer-logo {
+        font-size: 23px;
+    }
+
+
+    .rr-footer-brand p {
+        max-width: 360px;
+
+        margin: 12px 0 18px;
+
+        font-size: 12px;
+    }
+
+
+    .rr-footer-column h3 {
+        margin-bottom: 15px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-footer-column ul {
+        gap: 10px;
+    }
+
+
+    .rr-footer-column a {
+        font-size: 11px;
+    }
+
+
+    .rr-footer-bottom {
+        width: calc(100% - 32px);
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 18px 0;
+    }
+
+
+    .rr-footer-bottom p {
+        font-size: 10px;
+    }
+
+
+    .rr-footer-payment {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-footer {
+        padding-top: 42px;
+    }
+
+
+    .rr-footer-main {
+        width: calc(100% - 20px);
+
+        gap: 30px 20px;
+
+        padding-bottom: 36px;
+    }
+
+
+    .rr-footer-logo {
+        font-size: 22px;
+    }
+
+
+    .rr-footer-brand p {
+        font-size: 11px;
+    }
+
+
+    .rr-footer-column h3 {
+        font-size: 10.5px;
+    }
+
+
+    .rr-footer-column ul {
+        gap: 9px;
+    }
+
+
+    .rr-footer-column a {
+        font-size: 10.5px;
+    }
+
+
+    .rr-footer-bottom {
+        width: calc(100% - 20px);
+
+        padding: 16px 0;
+    }
+
+
+    .rr-footer-bottom p {
+        font-size: 9.5px;
+    }
+
+
+    .rr-footer-payment {
+        font-size: 9.5px;
+    }
+
+}
+
+
+/* =========================================================
+   SHOP RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-shop-hero {
+        padding: 58px 0 45px;
+    }
+
+
+    .rr-shop-hero-content {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-shop-hero h1 {
+        font-size: 36px;
+    }
+
+
+    .rr-shop {
+        padding: 45px 0 65px;
+    }
+
+
+    .rr-shop-search {
+        width: calc(100% - 48px);
+
+        margin-bottom: 30px;
+    }
+
+
+    .rr-shop-layout {
+        width: calc(100% - 48px);
+
+        grid-template-columns: 195px minmax(0, 1fr);
+
+        gap: 24px;
+    }
+
+
+    .rr-shop-products .rr-product-grid {
+        gap: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-shop-hero {
+        padding: 48px 0 40px;
+    }
+
+
+    .rr-shop-hero-content {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-shop-hero h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-shop-hero p {
+        font-size: 13px;
+    }
+
+
+    .rr-shop {
+        padding: 40px 0 55px;
+    }
+
+
+    .rr-shop-search {
+        width: calc(100% - 32px);
+
+        margin-bottom: 25px;
+    }
+
+
+    .rr-shop-layout {
+        width: calc(100% - 32px);
+
+        display: block;
+    }
+
+
+    .rr-shop-sidebar {
+        margin-bottom: 25px;
+    }
+
+
+    .rr-shop-toolbar {
+        margin-bottom: 18px;
+    }
+
+
+    .rr-shop-products .rr-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+
+    .rr-shop-sidebar {
+        padding: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-shop-hero {
+        padding: 40px 0 34px;
+    }
+
+
+    .rr-shop-hero-content {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-shop-hero h1 {
+        font-size: 26px;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    .rr-shop-hero p {
+        font-size: 12px;
+    }
+
+
+    .rr-shop {
+        padding: 34px 0 45px;
+    }
+
+
+    .rr-shop-search {
+        width: calc(100% - 20px);
+
+        margin-bottom: 20px;
+    }
+
+
+    .rr-shop-search input {
+        height: 44px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-shop-layout {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-shop-sidebar {
+        padding: 15px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .rr-shop-toolbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .rr-shop-sort {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    .rr-shop-sort select {
+        flex: 1;
+
+        max-width: 180px;
+    }
+
+
+    .rr-shop-products .rr-product-grid {
+        gap: 10px;
+    }
+
+
+    .rr-pagination {
+        gap: 5px;
+
+        margin-top: 30px;
+    }
+
+
+    .rr-pagination-button {
+        width: 31px;
+        height: 31px;
+    }
+
+}
+
+/* =========================================================
+   PRODUCT PAGE RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-product-details {
+        padding: 50px 0 60px;
+    }
+
+
+    .rr-product-details > .rr-container,
+    .rr-product-information > .rr-container,
+    .rr-related-products > .rr-container {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-product-layout {
+        gap: 40px;
+    }
+
+
+    .rr-product-info h1 {
+        font-size: 29px;
+    }
+
+
+    .rr-current-price {
+        font-size: 22px;
+    }
+
+
+    .rr-product-benefits {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-product-breadcrumb .rr-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-product-details {
+        padding: 40px 0 50px;
+    }
+
+
+    .rr-product-details > .rr-container,
+    .rr-product-information > .rr-container,
+    .rr-related-products > .rr-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-product-layout {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .rr-product-main-image {
+        max-width: 650px;
+    }
+
+
+    .rr-product-info h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-product-actions {
+        max-width: 100%;
+    }
+
+
+    .rr-product-benefits {
+        grid-template-columns: repeat(3, 1fr);
+
+        max-width: 100%;
+    }
+
+
+    .rr-product-information {
+        padding: 50px 0;
+    }
+
+
+    .rr-related-products {
+        padding: 55px 0;
+    }
+
+
+    .rr-related-products .rr-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-product-breadcrumb {
+        padding: 14px 0;
+    }
+
+
+    .rr-product-breadcrumb .rr-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-product-breadcrumb a,
+    .rr-product-breadcrumb span {
+        font-size: 9px;
+    }
+
+
+    .rr-product-details {
+        padding: 30px 0 40px;
+    }
+
+
+    .rr-product-details > .rr-container,
+    .rr-product-information > .rr-container,
+    .rr-related-products > .rr-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-product-layout {
+        gap: 28px;
+    }
+
+
+    .rr-product-image-wishlist {
+        top: 11px;
+        right: 11px;
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 13px;
+    }
+
+
+    .rr-product-thumbnails {
+        gap: 7px;
+    }
+
+
+    .rr-product-info h1 {
+        font-size: 25px;
+    }
+
+
+    .rr-product-description {
+        font-size: 11px;
+    }
+
+
+    .rr-product-actions {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    .rr-buy-now-button {
+        height: 43px;
+    }
+
+
+    .rr-product-benefits {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-product-tabs {
+        gap: 20px;
+
+        overflow-x: auto;
+    }
+
+
+    .rr-product-tab {
+        flex-shrink: 0;
+
+        font-size: 10px;
+    }
+
+
+    .rr-product-description-content h2 {
+        font-size: 17px;
+    }
+
+
+    .rr-product-description-content p {
+        font-size: 10px;
+    }
+
+
+    .rr-related-products .rr-product-grid {
+        gap: 10px;
+    }
+
+}
+
+/* =========================================================
+   CART RESPONSIVENESS
+   ========================================================= */
+
+
+@media (max-width: 1000px) {
+
+    .rr-cart-header > .rr-container,
+    .rr-cart > .rr-container,
+    .rr-empty-cart > .rr-container {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-cart-layout {
+        grid-template-columns: minmax(0, 1fr) 300px;
+
+        gap: 25px;
+    }
+
+
+    .rr-cart-items {
+        padding: 20px;
+    }
+
+
+    .rr-cart-summary {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-cart-header {
+        padding: 45px 0 35px;
+    }
+
+
+    .rr-cart-header > .rr-container,
+    .rr-cart > .rr-container,
+    .rr-empty-cart > .rr-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-cart-header h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-cart-layout {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .rr-cart-summary {
+        position: static;
+    }
+
+
+    .rr-cart-item-actions {
+        gap: 12px;
+    }
+
+
+    .rr-cart-summary {
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-cart-header {
+        padding: 35px 0 28px;
+    }
+
+
+    .rr-cart-header > .rr-container,
+    .rr-cart > .rr-container,
+    .rr-empty-cart > .rr-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-cart-header h1 {
+        font-size: 25px;
+    }
+
+
+    .rr-cart-header p {
+        font-size: 10px;
+    }
+
+
+    .rr-cart {
+        padding-bottom: 45px;
+    }
+
+
+    .rr-cart-items {
+        padding: 15px;
+    }
+
+
+    .rr-cart-items-header h2 {
+        font-size: 15px;
+    }
+
+
+    .rr-cart-item {
+        grid-template-columns: 72px minmax(0, 1fr);
+
+        gap: 12px;
+
+        align-items: start;
+    }
+
+
+    .rr-cart-item-image {
+        width: 72px;
+        height: 72px;
+    }
+
+
+    .rr-cart-item-details h3 {
+        font-size: 12px;
+    }
+
+
+    .rr-cart-item-price {
+        font-size: 11px;
+    }
+
+
+    .rr-cart-item-actions {
+        grid-column: 1 / -1;
+
+        justify-content: space-between;
+
+        padding-top: 3px;
+    }
+
+
+    .rr-cart-quantity {
+        height: 32px;
+    }
+
+
+    .rr-cart-summary {
+        padding: 18px;
+    }
+
+
+    .rr-cart-summary h2 {
+        font-size: 15px;
+    }
+
+
+    .rr-cart-summary-total strong {
+        font-size: 17px;
+    }
+
+
+    .rr-empty-cart {
+        padding: 60px 0;
+    }
+
+}
+
+/* =========================================================
+   CHECKOUT RESPONSIVENESS
+   ========================================================= */
+
+
+@media (max-width: 1000px) {
+
+    .rr-checkout-header > .rr-container,
+    .rr-checkout > .rr-container {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-checkout-layout {
+        grid-template-columns: minmax(0, 1fr) 310px;
+
+        gap: 25px;
+    }
+
+
+    .rr-checkout-card,
+    .rr-checkout-summary-card {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-checkout-header {
+        padding: 45px 0 35px;
+    }
+
+
+    .rr-checkout-header > .rr-container,
+    .rr-checkout > .rr-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-checkout-header h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-checkout-layout {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .rr-checkout-summary {
+        position: static;
+
+        order: -1;
+    }
+
+
+    .rr-checkout-summary-card {
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-checkout-header {
+        padding: 35px 0 28px;
+    }
+
+
+    .rr-checkout-header > .rr-container,
+    .rr-checkout > .rr-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-checkout-header h1 {
+        font-size: 25px;
+    }
+
+
+    .rr-checkout-header p {
+        font-size: 10px;
+    }
+
+
+    .rr-checkout {
+        padding-bottom: 45px;
+    }
+
+
+    .rr-checkout-card {
+        padding: 15px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .rr-checkout-card-header {
+        gap: 10px;
+
+        margin-bottom: 19px;
+    }
+
+
+    .rr-checkout-step {
+        width: 30px;
+        height: 30px;
+
+        font-size: 8px;
+    }
+
+
+    .rr-checkout-card-header h2 {
+        font-size: 14px;
+    }
+
+
+    .rr-checkout-card-header p {
+        font-size: 8px;
+    }
+
+
+    .rr-form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .rr-form-full {
+        grid-column: auto;
+    }
+
+
+    .rr-form-group label {
+        font-size: 9px;
+    }
+
+
+    .rr-form-group input,
+    .rr-form-group select,
+    .rr-form-group textarea {
+        font-size: 9px;
+    }
+
+
+    .rr-checkout-summary-card {
+        padding: 17px;
+    }
+
+
+    .rr-checkout-summary-card h2 {
+        font-size: 15px;
+    }
+
+
+    .rr-checkout-item {
+        grid-template-columns: 45px minmax(0, 1fr) auto;
+
+        gap: 8px;
+    }
+
+
+    .rr-checkout-item-image {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .rr-checkout-item-info strong {
+        font-size: 8px;
+    }
+
+
+    .rr-checkout-item-price {
+        font-size: 8px;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   ORDER CONFIRMATION RESPONSIVENESS
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SMALL DESKTOP / TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 1050px) {
+
+    .rr-order-confirmation {
+        padding: 55px 0 70px;
+    }
+
+    .rr-order-confirmation > .rr-container {
+        width: calc(100% - 48px);
+    }
+
+    .rr-order-layout {
+        grid-template-columns: minmax(0, 1fr) 275px;
+        gap: 20px;
+    }
+
+    .rr-order-card,
+    .rr-order-next-card {
+        padding: 19px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .rr-order-confirmation {
+        padding: 48px 0 60px;
+    }
+
+    .rr-order-confirmation > .rr-container {
+        width: calc(100% - 34px);
+    }
+
+    /* Success */
+
+    .rr-order-success {
+        margin-bottom: 34px;
+    }
+
+    .rr-order-success-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .rr-order-success h1 {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .rr-order-success > p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    /* Main layout */
+
+    .rr-order-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .rr-order-sidebar {
+        position: static;
+    }
+
+    /* Delivery */
+
+    .rr-order-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .rr-order-confirmation {
+        padding: 34px 0 45px;
+    }
+
+    .rr-order-confirmation > .rr-container {
+        width: calc(100% - 24px);
+    }
+
+
+    /* =====================================================
+       SUCCESS
+       ===================================================== */
+
+    .rr-order-success {
+        width: 100%;
+        margin-bottom: 27px;
+    }
+
+    .rr-order-success-icon {
+        width: 46px;
+        height: 46px;
+
+        margin-bottom: 12px;
+
+        font-size: 19px;
+    }
+
+    .rr-order-success .rr-section-eyebrow {
+        margin-bottom: 6px;
+
+        font-size: 8px;
+        letter-spacing: 1.1px;
+    }
+
+    .rr-order-success h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: -0.35px;
+    }
+
+    .rr-order-success > p {
+        max-width: 360px;
+
+        margin: 8px auto 15px;
+
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .rr-order-number {
+        gap: 6px;
+        padding: 7px 9px;
+    }
+
+    .rr-order-number span {
+        font-size: 7px;
+    }
+
+    .rr-order-number strong {
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       LAYOUT
+       ===================================================== */
+
+    .rr-order-layout {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 0;
+    }
+
+    .rr-order-details,
+    .rr-order-sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .rr-order-sidebar {
+        position: static;
+    }
+
+
+    /* =====================================================
+       CARDS
+       ===================================================== */
+
+    .rr-order-card,
+    .rr-order-next-card {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 14px;
+
+        border-radius: 9px;
+    }
+
+    .rr-order-card {
+        margin-bottom: 10px;
+    }
+
+
+    /* =====================================================
+       CARD HEADER
+       ===================================================== */
+
+    .rr-order-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        min-width: 0;
+
+        gap: 8px;
+
+        margin-bottom: 14px;
+    }
+
+    .rr-order-card-header > div {
+        min-width: 0;
+    }
+
+    .rr-order-card-eyebrow {
+        margin-bottom: 4px;
+
+        font-size: 6px;
+        letter-spacing: 0.9px;
+    }
+
+    .rr-order-card-header h2 {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .rr-order-status {
+        flex-shrink: 0;
+
+        padding: 4px 7px;
+
+        font-size: 6px;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       ORDER ITEMS
+       ===================================================== */
+
+    .rr-order-items {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 10px;
+    }
+
+    .rr-order-item {
+        display: grid;
+
+        width: 100%;
+        min-width: 0;
+
+        /*
+         * Fixed image
+         * Flexible product information
+         * Fixed price
+         */
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            auto;
+
+        align-items: center;
+
+        column-gap: 9px;
+    }
+
+    .rr-order-item-image {
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+
+        border-radius: 5px;
+    }
+
+    .rr-order-item-info {
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rr-order-item-info strong {
+        display: block;
+
+        width: 100%;
+
+        overflow: hidden;
+
+        font-size: 8px;
+        line-height: 1.25;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .rr-order-item-info span {
+        display: block;
+
+        margin-top: 2px;
+
+        font-size: 6px;
+        line-height: 1.25;
+    }
+
+    .rr-order-item-price {
+        display: block;
+
+        flex-shrink: 0;
+
+        align-self: center;
+
+        font-size: 8px;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       SUMMARY
+       ===================================================== */
+
+    .rr-order-divider {
+        height: 1px;
+
+        margin: 12px 0;
+    }
+
+    .rr-order-summary-row {
+        margin-bottom: 7px;
+    }
+
+    .rr-order-summary-row span,
+    .rr-order-summary-row strong {
+        font-size: 8px;
+        line-height: 1.2;
+    }
+
+    .rr-order-total span {
+        font-size: 10px;
+    }
+
+    .rr-order-total strong {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+
+    /* =====================================================
+       DELIVERY
+       ===================================================== */
+
+    .rr-order-info-grid {
+        display: flex;
+        flex-direction: column;
+
+        gap: 11px;
+
+        width: 100%;
+    }
+
+    .rr-order-info-block {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .rr-order-info-block span {
+        display: block;
+
+        margin-bottom: 3px;
+
+        font-size: 6px;
+        line-height: 1.2;
+    }
+
+    .rr-order-info-block strong {
+        display: block;
+
+        width: 100%;
+
+        font-size: 8px;
+        line-height: 1.45;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    /* =====================================================
+       PAYMENT
+       ===================================================== */
+
+    .rr-order-payment {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        min-width: 0;
+
+        gap: 9px;
+    }
+
+    .rr-order-payment-icon {
+        width: 31px;
+        height: 31px;
+
+        flex-shrink: 0;
+
+        border-radius: 6px;
+
+        font-size: 12px;
+    }
+
+    .rr-order-payment > div:last-child {
+        min-width: 0;
+    }
+
+    .rr-order-payment strong {
+        display: block;
+
+        font-size: 8px;
+        line-height: 1.25;
+    }
+
+    .rr-order-payment span {
+        display: block;
+
+        margin-top: 2px;
+
+        font-size: 6px;
+        line-height: 1.45;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =====================================================
+       NEXT STEPS
+       ===================================================== */
+
+    .rr-order-next-card {
+        margin-top: 0;
+    }
+
+    .rr-order-next-icon {
+        width: 33px;
+        height: 33px;
+
+        margin-bottom: 10px;
+
+        border-radius: 6px;
+
+        font-size: 12px;
+    }
+
+    .rr-order-next-card h2 {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+
+    /* =====================================================
+       STEPS
+       ===================================================== */
+
+    .rr-order-steps {
+        margin-top: 16px;
+    }
+
+    .rr-order-step {
+        display: flex;
+        align-items: flex-start;
+
+        gap: 8px;
+
+        padding-bottom: 16px;
+    }
+
+    .rr-order-step > span {
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        font-size: 5.5px;
+    }
+
+    .rr-order-step > div {
+        min-width: 0;
+    }
+
+    .rr-order-step:not(:last-child)::after {
+        top: 20px;
+        left: 9px;
+
+        height: calc(100% - 11px);
+    }
+
+    .rr-order-step strong {
+        display: block;
+
+        font-size: 7px;
+        line-height: 1.3;
+    }
+
+    .rr-order-step p {
+        margin: 2px 0 0;
+
+        font-size: 6px;
+        line-height: 1.45;
+    }
+
+
+    /* =====================================================
+       BUTTON
+       ===================================================== */
+
+    .rr-order-continue {
+        width: 100%;
+        height: 39px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 6px;
+
+        margin-top: 1px;
+
+        box-sizing: border-box;
+
+        font-size: 7px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+    .rr-order-confirmation {
+        padding: 29px 0 38px;
+    }
+
+    .rr-order-confirmation > .rr-container {
+        width: calc(100% - 18px);
+    }
+
+
+    /* Success */
+
+    .rr-order-success {
+        margin-bottom: 23px;
+    }
+
+    .rr-order-success-icon {
+        width: 43px;
+        height: 43px;
+
+        margin-bottom: 10px;
+
+        font-size: 18px;
+    }
+
+    .rr-order-success .rr-section-eyebrow {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .rr-order-success h1 {
+        font-size: 22px;
+        letter-spacing: -0.3px;
+    }
+
+    .rr-order-success > p {
+        font-size: 8.5px;
+    }
+
+    .rr-order-number {
+        padding: 6px 8px;
+    }
+
+    .rr-order-number span {
+        font-size: 6.5px;
+    }
+
+    .rr-order-number strong {
+        font-size: 7.5px;
+    }
+
+
+    /* Cards */
+
+    .rr-order-card,
+    .rr-order-next-card {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+
+    /* Header */
+
+    .rr-order-card-header {
+        margin-bottom: 12px;
+    }
+
+    .rr-order-card-eyebrow {
+        font-size: 5.5px;
+    }
+
+    .rr-order-card-header h2 {
+        font-size: 11px;
+    }
+
+    .rr-order-status {
+        padding: 3px 6px;
+        font-size: 5.5px;
+    }
+
+
+    /* Items */
+
+    .rr-order-items {
+        gap: 9px;
+    }
+
+    .rr-order-item {
+        grid-template-columns:
+            20px
+            minmax(0, 1fr)
+            auto;
+
+        column-gap: 8px;
+    }
+
+    .rr-order-item-image {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    .rr-order-item-info strong {
+        font-size: 7.5px;
+    }
+
+    .rr-order-item-info span {
+        font-size: 5.8px;
+    }
+
+    .rr-order-item-price {
+        font-size: 7.5px;
+    }
+
+
+    /* Summary */
+
+    .rr-order-divider {
+        margin: 11px 0;
+    }
+
+    .rr-order-summary-row span,
+    .rr-order-summary-row strong {
+        font-size: 7.5px;
+    }
+
+    .rr-order-total span {
+        font-size: 9px;
+    }
+
+    .rr-order-total strong {
+        font-size: 8px;
+    }
+
+
+    /* Delivery */
+
+    .rr-order-info-grid {
+        gap: 10px;
+    }
+
+    .rr-order-info-block span {
+        font-size: 5.8px;
+    }
+
+    .rr-order-info-block strong {
+        font-size: 7.5px;
+    }
+
+
+    /* Payment */
+
+    .rr-order-payment {
+        gap: 8px;
+    }
+
+    .rr-order-payment-icon {
+        width: 29px;
+        height: 29px;
+
+        font-size: 11px;
+    }
+
+    .rr-order-payment strong {
+        font-size: 7.5px;
+    }
+
+    .rr-order-payment span {
+        font-size: 5.8px;
+    }
+
+
+    /* Next steps */
+
+    .rr-order-next-icon {
+        width: 31px;
+        height: 31px;
+
+        margin-bottom: 9px;
+
+        font-size: 11px;
+    }
+
+    .rr-order-next-card h2 {
+        font-size: 11px;
+    }
+
+    .rr-order-steps {
+        margin-top: 14px;
+    }
+
+    .rr-order-step {
+        gap: 7px;
+        padding-bottom: 14px;
+    }
+
+    .rr-order-step > span {
+        width: 19px;
+        height: 19px;
+
+        font-size: 5px;
+    }
+
+    .rr-order-step:not(:last-child)::after {
+        top: 19px;
+        left: 9px;
+        height: calc(100% - 10px);
+    }
+
+    .rr-order-step strong {
+        font-size: 6.5px;
+    }
+
+    .rr-order-step p {
+        font-size: 5.8px;
+    }
+
+
+    /* Button */
+
+    .rr-order-continue {
+        height: 37px;
+        font-size: 6.5px;
+    }
+
+}
+
+
+/* =========================================================
+   WISHLIST RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-wishlist {
+        padding: 60px 0 70px;
+    }
+
+
+    .rr-wishlist > .rr-container {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-wishlist-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+
+
+    .rr-wishlist-content {
+        padding: 15px;
+    }
+
+
+    .rr-wishlist-content h2 {
+        font-size: 13px;
+    }
+
+
+    .rr-wishlist-bottom > strong {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-wishlist {
+        padding: 52px 0 60px;
+    }
+
+
+    .rr-wishlist > .rr-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-page-header {
+        align-items: flex-start;
+
+        margin-bottom: 28px;
+    }
+
+
+    .rr-page-header h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-page-header p {
+        font-size: 11px;
+    }
+
+
+    .rr-page-header-link {
+        margin-top: 4px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-wishlist-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 13px;
+    }
+
+
+    .rr-wishlist-content {
+        padding: 14px;
+    }
+
+
+    .rr-wishlist-content h2 {
+        min-height: 36px;
+
+        font-size: 13px;
+    }
+
+
+    .rr-wishlist-bottom {
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 9px;
+
+        margin-top: 13px;
+    }
+
+
+    .rr-wishlist-bottom > strong {
+        font-size: 14px;
+    }
+
+
+    .rr-wishlist-cart {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-wishlist {
+        padding: 44px 0 50px;
+    }
+
+
+    .rr-wishlist > .rr-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-page-header {
+        display: block;
+    }
+
+
+    .rr-page-header h1 {
+        font-size: 26px;
+    }
+
+
+    .rr-page-header p {
+        margin-top: 6px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-page-header-link {
+        margin-top: 13px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-wishlist-grid {
+        gap: 10px;
+    }
+
+
+    .rr-wishlist-content {
+        padding: 11px;
+    }
+
+
+    .rr-product-category {
+        margin-bottom: 5px;
+
+        font-size: 7px;
+    }
+
+
+    .rr-wishlist-content h2 {
+        min-height: 34px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-wishlist-bottom {
+        margin-top: 11px;
+    }
+
+
+    .rr-wishlist-bottom > strong {
+        font-size: 13px;
+    }
+
+
+    .rr-wishlist-cart {
+        min-height: 32px;
+
+        font-size: 8px;
+    }
+
+
+    .rr-wishlist-remove {
+        top: 8px;
+        right: 8px;
+
+        width: 28px;
+        height: 28px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   AUTH RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-auth-container {
+        width: calc(100% - 48px);
+
+        grid-template-columns: minmax(0, 1fr) 390px;
+
+        gap: 45px;
+    }
+
+
+    .rr-auth-intro h1 {
+        font-size: 36px;
+    }
+
+
+    .rr-auth-card {
+        padding: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-auth-page {
+        padding: 55px 0 65px;
+    }
+
+
+    .rr-auth-container {
+        width: calc(100% - 32px);
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .rr-auth-intro {
+        max-width: 600px;
+
+        margin-inline: auto;
+
+        text-align: center;
+    }
+
+
+    .rr-auth-intro h1 {
+        font-size: 32px;
+    }
+
+
+    .rr-auth-intro > p {
+        margin-inline: auto;
+    }
+
+
+    .rr-auth-benefits {
+        max-width: 430px;
+
+        margin-inline: auto;
+
+        text-align: left;
+    }
+
+
+    .rr-auth-card {
+        width: 100%;
+
+        max-width: 430px;
+
+        margin-inline: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .rr-auth-page {
+        padding: 42px 0 50px;
+    }
+
+
+    .rr-auth-container {
+        width: calc(100% - 20px);
+
+        gap: 28px;
+    }
+
+
+    .rr-auth-intro h1 {
+        font-size: 27px;
+    }
+
+
+    .rr-auth-intro > p {
+        margin-top: 13px;
+
+        font-size: 10px;
+    }
+
+
+    .rr-auth-benefits {
+        gap: 13px;
+    }
+
+
+    .rr-auth-benefit-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 13px;
+    }
+
+
+    .rr-auth-benefit strong {
+        font-size: 9px;
+    }
+
+
+    .rr-auth-benefit div > span {
+        font-size: 7px;
+    }
+
+
+    .rr-auth-card {
+        padding: 20px 17px;
+    }
+
+
+    .rr-auth-card-header h2 {
+        font-size: 20px;
+    }
+
+
+    .rr-auth-input input {
+        height: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   FORGOT PASSWORD RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-auth-single {
+        grid-template-columns: minmax(0, 1fr) 390px;
+
+        gap: 45px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-auth-single {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-auth-single {
+        gap: 28px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   TRACK ORDER RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-track-order-container {
+        width: calc(100% - 48px);
+    }
+
+
+    .rr-track-order-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .rr-track-order-form .rr-auth-submit {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-track-order-page {
+        padding: 55px 0 65px;
+    }
+
+
+    .rr-track-order-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-track-order-intro h1 {
+        font-size: 34px;
+    }
+
+
+    .rr-track-order-card,
+    .rr-order-status-card {
+        padding: 24px;
+    }
+
+
+    .rr-track-order-form {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-track-order-page {
+        padding: 44px 0 55px;
+    }
+
+
+    .rr-track-order-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-track-order-intro h1 {
+        font-size: 28px;
+    }
+
+
+    .rr-track-order-intro p {
+        font-size: 10px;
+    }
+
+
+    .rr-track-order-card,
+    .rr-order-status-card {
+        padding: 18px;
+    }
+
+
+    .rr-track-order-card-header h2 {
+        font-size: 17px;
+    }
+
+
+    .rr-track-order-card-header p {
+        font-size: 8px;
+    }
+
+
+    .rr-order-status-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .rr-track-order-help {
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   ACCOUNT RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rr-account-container {
+        width: calc(100% - 48px);
+    }
+
+    .rr-account-layout {
+        grid-template-columns: 190px minmax(0, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-account-page {
+        padding: 55px 0 65px;
+    }
+
+
+    .rr-account-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .rr-account-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .rr-account-header h1 {
+        font-size: 34px;
+    }
+
+
+    .rr-account-logout {
+        align-self: flex-start;
+    }
+
+
+    .rr-account-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-account-sidebar {
+        gap: 12px;
+    }
+
+
+    .rr-account-nav {
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 3px;
+    }
+
+
+    .rr-account-sidebar-help {
+        display: none;
+    }
+
+
+    .rr-account-stats {
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-account-page {
+        padding: 44px 0 55px;
+    }
+
+
+    .rr-account-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .rr-account-header h1 {
+        font-size: 28px;
+    }
+
+
+    .rr-account-header p {
+        font-size: 10px;
+    }
+
+
+    .rr-account-nav {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-account-welcome-card {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .rr-account-edit {
+        width: 100%;
+
+        padding-left: 62px;
+    }
+
+
+    .rr-account-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =====================================================
+       RECENT ORDERS
+       ===================================================== */
+
+    .rr-account-section {
+        padding: 18px 14px;
+    }
+
+
+    .rr-account-section-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .rr-account-section-header h2 {
+        font-size: 16px;
+    }
+
+
+    .rr-account-view-link {
+        align-self: flex-start;
+    }
+
+
+    .rr-account-empty {
+        padding: 35px 15px;
+    }
+
+}
+/* =========================================================
+   ORDERS RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-orders-toolbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .rr-orders-filter {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    .rr-orders-filter select {
+        min-width: 150px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-orders-toolbar h2 {
+        font-size: 16px;
+    }
+
+
+    .rr-orders-filter {
+        font-size: 8px;
+    }
+
+
+    .rr-orders-filter select {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   PROFILE RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-profile-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-profile-form-actions {
+        grid-column: 1;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-profile-card {
+        padding: 18px;
+    }
+
+
+    .rr-profile-card-header h2 {
+        font-size: 16px;
+    }
+
+
+    .rr-profile-card-header p {
+        font-size: 8px;
+    }
+
+
+    .rr-profile-form-actions {
+        justify-content: stretch;
+    }
+
+
+    .rr-profile-form-actions .rr-auth-submit {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   ORDER DETAILS RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .rr-order-details-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-order-summary {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rr-order-details-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .rr-order-details-header h1 {
+        font-size: 30px;
+    }
+
+
+    .rr-order-status {
+        align-self: flex-start;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-order-details-header h1 {
+        font-size: 26px;
+    }
+
+
+    .rr-order-details-card {
+        padding: 18px;
+    }
+
+
+    .rr-order-item {
+        grid-template-columns: 52px minmax(0, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .rr-order-item-image {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .rr-order-item-price {
+        grid-column: 2;
+
+        margin-top: -4px;
+    }
+
+
+    .rr-order-item-info h3 {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   ORDER CARD RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-order-card {
+        padding: 14px;
+
+        gap: 10px;
+
+        overflow: hidden;
+    }
+
+
+    .rr-order-card-main {
+        display: flex;
+
+        align-items: center;
+
+        gap: 9px;
+
+        width: 100%;
+
+        min-width: 0;
+
+        white-space: nowrap;
+    }
+
+
+    .rr-order-card-icon {
+        width: 34px;
+        height: 34px;
+
+        flex-shrink: 0;
+
+        font-size: 12px;
+    }
+
+
+    .rr-order-card-info {
+        flex: 1;
+
+        min-width: 0;
+
+        overflow: hidden;
+    }
+
+
+    .rr-order-card-label {
+        margin-bottom: 2px;
+
+        font-size: 6px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    .rr-order-card-info h3 {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        font-size: 10px;
+    }
+
+
+    .rr-order-card-info p {
+        margin-top: 2px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        font-size: 7px;
+    }
+
+
+    .rr-order-status {
+        flex-shrink: 0;
+
+        padding: 4px 6px;
+
+        font-size: 6px;
+    }
+
+
+    .rr-order-card-total {
+        flex-shrink: 0;
+
+        font-size: 9px;
+    }
+
+
+    .rr-order-card-details {
+        flex-shrink: 0;
+
+        gap: 4px;
+
+        font-size: 7px;
+
+        white-space: nowrap;
+    }
+
+
+    .rr-order-card-details i {
+        font-size: 8px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-order-card {
+        padding: 12px;
+    }
+
+
+    .rr-order-card-main {
+        gap: 7px;
+    }
+
+
+    .rr-order-card-icon {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+
+    .rr-order-card-label {
+        font-size: 5.5px;
+    }
+
+
+    .rr-order-card-info h3 {
+        font-size: 9px;
+    }
+
+
+    .rr-order-card-info p {
+        font-size: 6.5px;
+    }
+
+
+    .rr-order-status {
+        padding: 3px 5px;
+
+        font-size: 5.5px;
+    }
+
+
+    .rr-order-card-total {
+        font-size: 8px;
+    }
+
+
+    .rr-order-card-details {
+        font-size: 6.5px;
+    }
+
+
+    .rr-order-card-details i {
+        font-size: 7px;
+    }
+
+}
+/* =========================================================
+   ADDRESSES RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-address-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-address-section-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .rr-address-add-button {
+        align-self: flex-start;
+    }
+
+
+    .rr-address-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-address-full-field {
+        grid-column: 1;
+    }
+
+
+    .rr-address-default-option {
+        grid-column: 1;
+    }
+
+
+    .rr-address-form-actions {
+        grid-column: 1;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-address-form-wrapper {
+        padding: 18px;
+    }
+
+
+    .rr-address-section-header h2 {
+        font-size: 16px;
+    }
+
+
+    .rr-address-card {
+        padding: 16px;
+    }
+
+
+    .rr-address-new-card {
+        min-height: 160px;
+    }
+
+
+    .rr-address-form-actions {
+        align-items: stretch;
+
+        flex-direction: column-reverse;
+    }
+
+
+    .rr-address-form-actions .rr-auth-submit,
+    .rr-address-cancel-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   ADMIN RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .rr-admin-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .rr-admin-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .rr-admin-sidebar {
+        transform: translateX(-100%);
+
+        transition: transform .25s ease;
+    }
+
+
+    .rr-admin-sidebar.is-open {
+        transform: translateX(0);
+    }
+
+
+    .rr-admin-main {
+        margin-left: 0;
+    }
+
+
+    .rr-admin-menu-button {
+        display: flex;
+    }
+
+
+    .rr-admin-overlay.is-visible {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .rr-admin-content {
+        padding: 20px 15px;
+    }
+
+
+    .rr-admin-topbar {
+        padding: 12px 15px;
+    }
+
+
+    .rr-admin-welcome {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .rr-admin-primary-button {
+        align-self: flex-start;
+    }
+
+
+    .rr-admin-lower-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-admin-table-wrapper {
+        overflow-x: auto;
+    }
+
+
+    .rr-admin-table {
+        min-width: 600px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .rr-admin-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rr-admin-stat-card > strong {
+        font-size: 20px;
+    }
+
+
+    .rr-admin-topbar-actions .rr-admin-store-link {
+        display: none;
+    }
+
+
+    .rr-admin-welcome h2 {
+        font-size: 22px;
+    }
+
+
+    .rr-admin-inventory {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* Shop filter controls */
+@media (max-width: 900px) {
+    .rr-filter-header { gap: 10px; }
+    .rr-clear-filters { min-height: 36px; padding: 8px 11px; font-size: 10px; white-space: nowrap; }
+}
+@media (max-width: 600px) {
+    .rr-filter-header { align-items: center; }
+    .rr-clear-filters { min-height: 38px; padding: 9px 12px; }
+}
+
+@media (max-width: 600px) {
+    .rr-bike-admin-form > div { flex-direction: column; }
+    .rr-bike-admin-form > div .rr-btn { width: 100%; }
+}

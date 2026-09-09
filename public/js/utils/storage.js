@@ -1,0 +1,1 @@
+// Browser storage helpers.

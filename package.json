@@ -1,0 +1,27 @@
+{
+  "name": "roadready",
+  "version": "1.0.0",
+  "description": "RoadReady motorcycle parts and accessories e-commerce store",
+  "license": "ISC",
+  "author": "abrvion",
+  "type": "module",
+  "main": "server/server.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "db:migrate": "node server/utils/migrate.js",
+    "db:check": "node -e \"import('./server/config/database.js').then(async ({checkDatabaseConnection})=>{await checkDatabaseConnection(); console.log('Database connection OK'); process.exit(0)}).catch(e=>{console.error(e.message);process.exit(1)})\"",
+    "test": "node --test tests/backend/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0"
+  }
+}

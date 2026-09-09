@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
+
+# Uploaded/generated files
+server/uploads/products/*
+server/uploads/temporary/*
+
+# Test coverage
+coverage/
+
+# Build/output directories
+dist/
+build/

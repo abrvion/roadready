@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Order | RoadReady</title>
+
+    <meta
+        name="description"
+        content="Track your RoadReady motorcycle parts and accessories order."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+        <!-- =================================================
+             TRACK ORDER
+             ================================================= -->
+
+        <section class="rr-track-order-page">
+
+            <div class="rr-track-order-container">
+
+
+                <!-- Page Introduction -->
+
+                <div class="rr-track-order-intro">
+
+                    <span class="rr-section-eyebrow">
+                        ORDER TRACKING
+                    </span>
+
+                    <h1>
+                        Where's Your<br>
+                        Order?
+                    </h1>
+
+                    <p>
+                        Enter your order details below to check the
+                        latest status of your RoadReady delivery.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Tracking Form -->
+
+                <div class="rr-track-order-card">
+
+                    <div class="rr-track-order-card-header">
+
+                        <div class="rr-track-order-icon">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Track Your Order
+                            </h2>
+
+                            <p>
+                                Enter your order number and email address.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="track-order-form"
+                        class="rr-track-order-form"
+                    >
+
+
+                        <!-- Order Number -->
+
+                        <div class="rr-form-field">
+
+                            <label for="track-order-number">
+                                Order Number
+                            </label>
+
+                            <div class="rr-auth-input">
+
+                                <i class="bi bi-receipt"></i>
+
+                                <input
+                                    type="text"
+                                    id="track-order-number"
+                                    name="orderNumber"
+                                    placeholder="e.g. RR-10001"
+                                    autocomplete="off"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Email -->
+
+                        <div class="rr-form-field">
+
+                            <label for="track-order-email">
+                                Email Address
+                            </label>
+
+                            <div class="rr-auth-input">
+
+                                <i class="bi bi-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="track-order-email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="rr-auth-submit"
+                        >
+                            Track Order
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ORDER STATUS
+                     ================================================= -->
+
+                <div
+                    class="rr-order-status-card"
+                    id="order-status"
+                    hidden
+                >
+
+                    <div class="rr-order-status-header">
+
+                        <div>
+
+                            <span class="rr-category-label">
+                                ORDER
+                            </span>
+
+                            <h2 id="tracked-order-number">
+                                RR-10001
+                            </h2>
+
+                        </div>
+
+                        <span class="rr-order-status-badge" data-track-status>
+                            In Transit
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="rr-order-timeline">
+
+
+                        <!-- Order Placed -->
+
+                        <div class="rr-order-step is-complete">
+
+                            <div class="rr-order-step-marker">
+
+                                <i class="bi bi-check"></i>
+
+                            </div>
+
+                            <div class="rr-order-step-content">
+
+                                <strong>
+                                    Order Placed
+                                </strong>
+
+                                <span>
+                                    Your order has been received.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Processing -->
+
+                        <div class="rr-order-step is-complete">
+
+                            <div class="rr-order-step-marker">
+
+                                <i class="bi bi-check"></i>
+
+                            </div>
+
+                            <div class="rr-order-step-content">
+
+                                <strong>
+                                    Processing
+                                </strong>
+
+                                <span>
+                                    Your items are being prepared.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Shipped -->
+
+                        <div class="rr-order-step is-active">
+
+                            <div class="rr-order-step-marker">
+
+                                <i class="bi bi-truck"></i>
+
+                            </div>
+
+                            <div class="rr-order-step-content">
+
+                                <strong>
+                                    In Transit
+                                </strong>
+
+                                <span>
+                                    Your order is on its way.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Delivered -->
+
+                        <div class="rr-order-step">
+
+                            <div class="rr-order-step-marker">
+
+                                <i class="bi bi-house-check"></i>
+
+                            </div>
+
+                            <div class="rr-order-step-content">
+
+                                <strong>
+                                    Delivered
+                                </strong>
+
+                                <span>
+                                    Your order will arrive soon.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Help -->
+
+                <div class="rr-track-order-help">
+
+                    <i class="bi bi-question-circle"></i>
+
+                    <span>
+                        Can't find your order?
+                    </span>
+
+                    <a href="/contact">
+                        Contact RoadReady
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         PAGE SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/track-order.js"
+    ></script>
+
+</body>
+
+</html>
+

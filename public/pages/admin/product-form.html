@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Add Product | RoadReady Admin</title>
+
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+>
+
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/components.css" />
+<link rel="stylesheet" href="/css/pages.css" />
+<link rel="stylesheet" href="/css/responsive.css" />
+
+
+</head>
+
+<body class="rr-admin-body">
+
+<!-- =====================================================
+     ADMIN SIDEBAR
+     ===================================================== -->
+
+<aside class="rr-admin-sidebar">
+
+
+<div class="rr-admin-brand">
+
+    <a href="/" class="rr-logo">
+
+        <span class="rr-logo-mark">
+            <i class="bi bi-speedometer2"></i>
+        </span>
+
+        <span class="rr-logo-text">
+            ROAD<span>READY</span>
+        </span>
+
+    </a>
+
+    <span class="rr-admin-label">
+        ADMIN
+    </span>
+
+</div>
+
+
+<nav class="rr-admin-nav">
+
+    <span class="rr-admin-nav-label">
+        MANAGEMENT
+    </span>
+
+
+    <a
+        href="/admin"
+        class="rr-admin-nav-link"
+    >
+        <i class="bi bi-grid-1x2"></i>
+        <span>Dashboard</span>
+    </a>
+
+
+    <a
+        href="/admin/products"
+        class="rr-admin-nav-link is-active"
+    >
+        <i class="bi bi-box-seam"></i>
+        <span>Products</span>
+    </a>
+
+
+    <a
+        href="/admin/categories"
+        class="rr-admin-nav-link"
+    >
+        <i class="bi bi-tags"></i>
+        <span>Categories</span>
+    </a>
+            <a
+                href="/admin/bikes"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-bicycle"></i>
+                <span>Bike Finder</span>
+            </a>
+
+
+
+
+    <a
+        href="/admin/orders"
+        class="rr-admin-nav-link"
+    >
+        <i class="bi bi-receipt"></i>
+        <span>Orders</span>
+    </a>
+
+
+    <a
+        href="/admin/customers"
+        class="rr-admin-nav-link"
+    >
+        <i class="bi bi-people"></i>
+        <span>Customers</span>
+    </a>
+
+
+    <span class="rr-admin-nav-label">
+        STORE
+    </span>
+
+
+    <a
+        href="/shop"
+        class="rr-admin-nav-link"
+    >
+        <i class="bi bi-shop"></i>
+        <span>View Store</span>
+    </a>
+
+</nav>
+
+
+<div class="rr-admin-sidebar-bottom">
+
+    <a
+        href="/account/profile"
+        class="rr-admin-profile"
+    >
+
+        <span class="rr-admin-profile-icon">
+            <i class="bi bi-person"></i>
+        </span>
+
+        <span>
+            <strong>Admin</strong>
+            <small>Administrator</small>
+        </span>
+
+    </a>
+
+
+    <button
+        type="button"
+        class="rr-admin-logout"
+        id="admin-logout"
+    >
+        <i class="bi bi-box-arrow-right"></i>
+        <span>Logout</span>
+    </button>
+
+</div>
+
+
+</aside>
+
+<!-- Mobile overlay -->
+
+<div
+    class="rr-admin-overlay"
+    id="admin-overlay"
+></div>
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="rr-admin-main">
+
+<!-- TOPBAR -->
+
+<header class="rr-admin-topbar">
+
+    <div class="rr-admin-topbar-left">
+
+        <button
+            type="button"
+            class="rr-admin-menu-button"
+            id="admin-menu-button"
+            aria-label="Open admin menu"
+        >
+            <i class="bi bi-list"></i>
+        </button>
+
+
+        <div>
+
+            <span class="rr-admin-eyebrow">
+                PRODUCT MANAGEMENT
+            </span>
+
+            <h1 id="admin-product-page-title">
+                Add Product
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="rr-admin-topbar-actions">
+
+        <a
+            href="/shop"
+            target="_blank"
+            class="rr-admin-store-link"
+        >
+            <i class="bi bi-box-arrow-up-right"></i>
+            View Store
+        </a>
+
+
+        <button
+            type="button"
+            class="rr-admin-notification"
+            aria-label="Notifications"
+        >
+            <i class="bi bi-bell"></i>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENT
+     ===================================================== -->
+
+<section class="rr-admin-content rr-admin-product-form-page">
+
+
+    <!-- Page header -->
+
+    <div class="rr-admin-page-header">
+
+        <div>
+
+            <a
+                href="/admin/products"
+                class="rr-admin-back-link"
+            >
+                <i class="bi bi-arrow-left"></i>
+                Back to Products
+            </a>
+
+
+            <span class="rr-admin-eyebrow">
+                PRODUCT
+            </span>
+
+            <h2 id="admin-product-form-heading">
+                Add a New Product
+            </h2>
+
+            <p>
+                Add product information, pricing, inventory and image.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FORM
+         ================================================= -->
+
+    <form
+        id="admin-product-form"
+        class="rr-admin-product-form"
+    >
+
+
+        <!-- =================================================
+             BASIC INFORMATION
+             ================================================= -->
+
+        <section class="rr-admin-panel">
+
+            <div class="rr-admin-panel-heading">
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        BASIC INFORMATION
+                    </span>
+
+                    <h3>
+                        Product Details
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="rr-admin-form-grid">
+
+
+                <!-- Product Name -->
+
+                <div class="rr-admin-form-group rr-admin-form-full">
+
+                    <label for="product-name">
+                        Product Name
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product-name"
+                        name="name"
+                        placeholder="e.g. Premium Motorcycle Brake Pads"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Category -->
+
+                <div class="rr-admin-form-group">
+
+                    <label for="product-category">
+                        Category
+                        <span>*</span>
+                    </label>
+
+                    <select
+                        id="product-category"
+                        name="category"
+                        required
+                    >
+                        <option value="">
+                            Loading categories...
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <!-- Brand -->
+
+                <div class="rr-admin-form-group">
+
+                    <label for="product-brand">
+                        Brand
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product-brand"
+                        name="brand"
+                        placeholder="e.g. RoadReady"
+                    >
+
+                </div>
+
+
+                <!-- Stock -->
+
+                <div class="rr-admin-form-group">
+
+                    <label for="product-stock">
+                        Stock Quantity
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="number"
+                        id="product-stock"
+                        name="stock"
+                        min="0"
+                        placeholder="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Description -->
+
+                <div class="rr-admin-form-group rr-admin-form-full">
+
+                    <label for="product-description">
+                        Description
+                        <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="product-description"
+                        name="description"
+                        rows="6"
+                        placeholder="Describe the product..."
+                        required
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRICING
+             ================================================= -->
+
+        <section class="rr-admin-panel">
+
+            <div class="rr-admin-panel-heading">
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        PRICING
+                    </span>
+
+                    <h3>
+                        Product Pricing
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="rr-admin-form-grid">
+
+
+                <!-- Price -->
+
+                <div class="rr-admin-form-group">
+
+                    <label for="product-price">
+                        Selling Price
+                        <span>*</span>
+                    </label>
+
+                    <div class="rr-admin-input-prefix">
+
+                        <span>
+                            ৳
+                        </span>
+
+                        <input
+                            type="number"
+                            id="product-price"
+                            name="price"
+                            min="0"
+                            step="0.01"
+                            placeholder="0.00"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<!-- =================================================
+     PRODUCT IMAGE
+     ================================================= -->
+
+<section class="rr-admin-panel">
+
+    <div class="rr-admin-panel-heading">
+
+        <div>
+
+            <span class="rr-admin-panel-label">
+                MEDIA
+            </span>
+
+            <h3>
+                Product Image
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <div class="rr-admin-form-grid">
+
+        <div class="rr-admin-form-group rr-admin-form-full">
+
+            <label for="product-image-url">
+                Image URL
+            </label>
+
+            <input
+                type="url"
+                id="product-image-url"
+                name="imageUrl"
+                placeholder="https://example.com/product-image.jpg"
+            >
+
+            <small>
+                Enter the URL of the product image.
+            </small>
+
+
+            <!-- Small Product Image Preview -->
+
+            <div
+                id="admin-product-image-preview"
+                hidden
+                style="
+                    width: 100px;
+                    height: 100px;
+                    margin-top: 12px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f8f8f8;
+                "
+            >
+
+                <img
+                    id="admin-product-preview-image"
+                    src=""
+                    alt="Product image preview"
+                    style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: block;
+                    "
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- =================================================
+             PRODUCT OPTIONS
+             ================================================= -->
+
+        <section class="rr-admin-panel">
+
+            <div class="rr-admin-panel-heading">
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        STORE SETTINGS
+                    </span>
+
+                    <h3>
+                        Product Status
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="rr-admin-product-options">
+
+                <label class="rr-admin-checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="product-active"
+                        name="active"
+                        checked
+                    >
+
+                    <span></span>
+
+                    <div>
+
+                        <strong>
+                            Active Product
+                        </strong>
+
+                        <small>
+                            Make this product visible and available in the store.
+                        </small>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FORM ACTIONS
+             ================================================= -->
+
+        <div class="rr-admin-form-actions">
+
+            <a
+                href="/admin/products"
+                class="rr-admin-secondary-button"
+            >
+                Cancel
+            </a>
+
+
+            <button
+                type="submit"
+                class="rr-admin-primary-button"
+                id="admin-save-product"
+            >
+                <i class="bi bi-check2"></i>
+                Save Product
+            </button>
+
+        </div>
+
+
+    </form>
+
+</section>
+
+
+</main>
+
+<script
+    type="module"
+    src="/js/pages/admin.js"
+></script>
+
+</body>
+
+</html>

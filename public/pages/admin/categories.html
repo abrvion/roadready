@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Categories | RoadReady Admin</title>
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- RoadReady CSS -->
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/css/pages.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/css/responsive.css"
+    >
+
+</head>
+
+
+<body class="rr-admin-body">
+
+
+<!-- =====================================================
+     ADMIN SIDEBAR
+     ===================================================== -->
+
+<aside class="rr-admin-sidebar">
+
+
+    <!-- Brand -->
+
+    <div class="rr-admin-brand">
+
+        <a
+            href="/"
+            class="rr-logo"
+        >
+
+            <span class="rr-logo-mark">
+                <i class="bi bi-speedometer2"></i>
+            </span>
+
+            <span class="rr-logo-text">
+                ROAD<span>READY</span>
+            </span>
+
+        </a>
+
+
+        <span class="rr-admin-label">
+            ADMIN
+        </span>
+
+    </div>
+
+
+    <!-- Navigation -->
+
+    <nav class="rr-admin-nav">
+
+
+        <span class="rr-admin-nav-label">
+            MANAGEMENT
+        </span>
+
+
+        <a
+            href="/admin"
+            class="rr-admin-nav-link"
+        >
+
+            <i class="bi bi-grid-1x2"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a
+            href="/admin/products"
+            class="rr-admin-nav-link"
+        >
+
+            <i class="bi bi-box-seam"></i>
+
+            <span>
+                Products
+            </span>
+
+        </a>
+
+
+        <a
+            href="/admin/categories"
+            class="rr-admin-nav-link is-active"
+        >
+
+            <i class="bi bi-tags"></i>
+
+            <span>
+                Categories
+            </span>
+
+        </a>
+            <a
+                href="/admin/bikes"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-bicycle"></i>
+                <span>Bike Finder</span>
+            </a>
+
+
+
+
+        <a
+            href="/admin/orders"
+            class="rr-admin-nav-link"
+        >
+
+            <i class="bi bi-receipt"></i>
+
+            <span>
+                Orders
+            </span>
+
+        </a>
+
+
+        <a
+            href="/admin/customers"
+            class="rr-admin-nav-link"
+        >
+
+            <i class="bi bi-people"></i>
+
+            <span>
+                Customers
+            </span>
+
+        </a>
+
+
+        <span class="rr-admin-nav-label">
+            STORE
+        </span>
+
+
+        <a
+            href="/shop"
+            class="rr-admin-nav-link"
+        >
+
+            <i class="bi bi-shop"></i>
+
+            <span>
+                View Store
+            </span>
+
+        </a>
+</nav>
+
+
+    <!-- Sidebar bottom -->
+
+    <div class="rr-admin-sidebar-bottom">
+
+
+        <a
+            href="/account/profile"
+            class="rr-admin-profile"
+        >
+
+            <span class="rr-admin-profile-icon">
+                <i class="bi bi-person"></i>
+            </span>
+
+
+            <span>
+
+                <strong>
+                    Admin
+                </strong>
+
+                <small>
+                    Administrator
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <button
+            type="button"
+            class="rr-admin-logout"
+            id="admin-logout"
+        >
+
+            <i class="bi bi-box-arrow-right"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </button>
+
+    </div>
+
+
+</aside>
+
+
+<!-- =====================================================
+     MOBILE OVERLAY
+     ===================================================== -->
+
+<div
+    class="rr-admin-overlay"
+    id="admin-overlay"
+></div>
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="rr-admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+         ================================================= -->
+
+    <header class="rr-admin-topbar">
+
+
+        <div class="rr-admin-topbar-left">
+
+
+            <button
+                type="button"
+                class="rr-admin-menu-button"
+                id="admin-menu-button"
+                aria-label="Open admin menu"
+            >
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+
+            <div>
+
+                <span class="rr-admin-eyebrow">
+                    CATEGORY MANAGEMENT
+                </span>
+
+                <h1>
+                    Categories
+                </h1>
+
+            </div>
+
+        </div>
+
+
+        <div class="rr-admin-topbar-actions">
+
+
+            <a
+                href="/shop"
+                target="_blank"
+                class="rr-admin-store-link"
+            >
+
+                <i class="bi bi-box-arrow-up-right"></i>
+
+                View Store
+
+            </a>
+
+
+            <button
+                type="button"
+                class="rr-admin-notification"
+                aria-label="Notifications"
+            >
+
+                <i class="bi bi-bell"></i>
+
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+    </header>
+
+
+    <!-- =================================================
+         CONTENT
+         ================================================= -->
+
+    <section class="rr-admin-content">
+
+
+        <!-- Page Header -->
+
+        <div class="rr-admin-page-header">
+
+            <div>
+
+                <span class="rr-admin-eyebrow">
+                    CATEGORIES
+                </span>
+
+                <h2>
+                    Product Categories
+                </h2>
+
+                <p>
+                    Create and manage the categories used by your products.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CATEGORY FORM
+             ================================================= -->
+
+        <section class="rr-admin-panel">
+
+
+            <div class="rr-admin-panel-heading">
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        CATEGORY MANAGEMENT
+                    </span>
+
+                    <h3>
+                        Add Category
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <form
+                id="admin-category-form"
+                class="rr-admin-product-form"
+            >
+
+
+                <!-- Hidden ID used when editing -->
+
+                <input
+                    type="hidden"
+                    id="admin-category-id"
+                >
+
+
+                <div class="rr-admin-form-grid">
+
+
+                    <!-- Category Name -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label for="admin-category-name">
+
+                            Category Name
+
+                            <span>*</span>
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="admin-category-name"
+                            name="name"
+                            placeholder="e.g. Brake Systems"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Category Image -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label for="admin-category-image">
+
+                            Image URL
+
+                        </label>
+
+
+                        <input
+                            type="url"
+                            id="admin-category-image"
+                            name="image"
+                            placeholder="https://example.com/category.jpg"
+                        >
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <div class="rr-admin-form-group rr-admin-form-full">
+
+                        <label for="admin-category-description">
+
+                            Description
+
+                        </label>
+
+
+                        <textarea
+                            id="admin-category-description"
+                            name="description"
+                            rows="5"
+                            placeholder="Describe this product category..."
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Form Actions -->
+
+                <div class="rr-admin-form-actions">
+
+
+                    <button
+                        type="button"
+                        class="rr-admin-secondary-button"
+                        id="admin-category-cancel"
+                    >
+
+                        <i class="bi bi-x-lg"></i>
+
+                        Cancel
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="rr-admin-primary-button"
+                    >
+
+                        <i class="bi bi-check2"></i>
+
+                        Save Category
+
+                    </button>
+
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- =================================================
+             CATEGORY LIST
+             ================================================= -->
+
+        <section class="rr-admin-panel">
+
+
+            <div class="rr-admin-panel-heading">
+
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        CATEGORY LIST
+                    </span>
+
+                    <h3>
+                        All Categories
+                    </h3>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <div class="rr-admin-table-search">
+
+                    <i class="bi bi-search"></i>
+
+
+                    <input
+                        type="search"
+                        id="admin-category-search"
+                        placeholder="Search categories..."
+                        aria-label="Search categories"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Table -->
+
+            <div class="rr-admin-table-wrapper">
+
+                <table
+                    class="rr-admin-table"
+                    id="admin-categories-table"
+                >
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Name
+                            </th>
+
+                            <th>
+                                Description
+                            </th>
+
+                            <th>
+                                Products
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody></tbody>
+
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     ADMIN JAVASCRIPT
+     ===================================================== -->
+
+<script
+    type="module"
+    src="/js/pages/admin.js"
+></script>
+
+
+</body>
+
+</html>
+

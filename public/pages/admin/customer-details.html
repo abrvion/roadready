@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Details | RoadReady Admin</title>
+
+    <meta
+        name="description"
+        content="View customer details and order history."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+
+<body class="rr-admin-body">
+
+
+    <!-- =====================================================
+         ADMIN SIDEBAR
+         ===================================================== -->
+
+    <aside class="rr-admin-sidebar">
+
+        <div class="rr-admin-brand">
+
+            <a href="/" class="rr-logo">
+
+                <span class="rr-logo-mark">
+                    <i class="bi bi-speedometer2"></i>
+                </span>
+
+                <span class="rr-logo-text">
+                    ROAD<span>READY</span>
+                </span>
+
+            </a>
+
+            <span class="rr-admin-label">
+                ADMIN
+            </span>
+
+        </div>
+
+
+        <nav class="rr-admin-nav">
+
+            <span class="rr-admin-nav-label">
+                MANAGEMENT
+            </span>
+
+
+            <a
+                href="/admin"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a
+                href="/admin/products"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-box-seam"></i>
+                <span>Products</span>
+            </a>
+
+
+            <a
+                href="/admin/categories"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-tags"></i>
+                <span>Categories</span>
+            </a>
+            <a
+                href="/admin/bikes"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-bicycle"></i>
+                <span>Bike Finder</span>
+            </a>
+
+
+<a
+                href="/admin/orders"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-receipt"></i>
+                <span>Orders</span>
+            </a>
+
+
+            <a
+                href="/admin/customers"
+                class="rr-admin-nav-link is-active"
+            >
+                <i class="bi bi-people"></i>
+                <span>Customers</span>
+            </a>
+
+
+            <span class="rr-admin-nav-label">
+                STORE
+            </span>
+
+
+            <a
+                href="/shop"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-shop"></i>
+                <span>View Store</span>
+            </a>
+
+        </nav>
+
+
+        <div class="rr-admin-sidebar-bottom">
+
+            <a
+                href="/account/profile"
+                class="rr-admin-profile"
+            >
+
+                <span class="rr-admin-profile-icon">
+                    <i class="bi bi-person"></i>
+                </span>
+
+                <span>
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="rr-admin-logout"
+                id="admin-logout"
+            >
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+         ===================================================== -->
+
+    <div
+        class="rr-admin-overlay"
+        id="admin-overlay"
+    ></div>
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="rr-admin-main">
+
+
+        <!-- =================================================
+             TOPBAR
+             ================================================= -->
+
+        <header class="rr-admin-topbar">
+
+            <div class="rr-admin-topbar-left">
+
+                <button
+                    type="button"
+                    class="rr-admin-menu-button"
+                    id="admin-menu-button"
+                    aria-label="Open admin menu"
+                >
+                    <i class="bi bi-list"></i>
+                </button>
+
+
+                <div>
+
+                    <span class="rr-admin-eyebrow">
+                        CUSTOMER
+                    </span>
+
+                    <h1 id="admin-customer-page-title">
+                        Customer Details
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="rr-admin-topbar-actions">
+
+                <a
+                    href="/shop"
+                    target="_blank"
+                    class="rr-admin-store-link"
+                >
+                    <i class="bi bi-box-arrow-up-right"></i>
+                    View Store
+                </a>
+
+
+                <button
+                    type="button"
+                    class="rr-admin-notification"
+                    aria-label="Notifications"
+                >
+                    <i class="bi bi-bell"></i>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             CONTENT
+             ================================================= -->
+
+        <section class="rr-admin-content">
+
+
+            <!-- Back -->
+
+            <a
+                href="/admin/customers"
+                class="rr-admin-back-link"
+            >
+                <i class="bi bi-arrow-left"></i>
+                Back to Customers
+            </a>
+
+
+            <!-- =================================================
+                 CUSTOMER PROFILE
+                 ================================================= -->
+
+            <section class="rr-admin-panel">
+
+                <div class="rr-admin-panel-heading">
+
+                    <div>
+
+                        <span class="rr-admin-panel-label">
+                            CUSTOMER PROFILE
+                        </span>
+
+                        <h2 id="admin-customer-name">
+                            Customer Name
+                        </h2>
+
+                        <p id="admin-customer-id">
+                            Customer #C-001
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rr-admin-form-grid">
+
+
+                    <!-- Email -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <div class="rr-admin-detail-value">
+                            <span id="admin-customer-email">
+                                customer@example.com
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label>
+                            Phone
+                        </label>
+
+                        <div class="rr-admin-detail-value">
+                            <span id="admin-customer-phone">
+                                +880 1700-000000
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Joined -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label>
+                            Joined
+                        </label>
+
+                        <div class="rr-admin-detail-value">
+                            <span id="admin-customer-joined">
+                                Jul 20, 2026
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Status -->
+
+                    <div class="rr-admin-form-group">
+
+                        <label>
+                            Account Status
+                        </label>
+
+                        <div class="rr-admin-detail-value">
+                            <span
+                                class="rr-admin-status delivered"
+                                id="admin-customer-status"
+                            >
+                                Active
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 CUSTOMER STATISTICS
+                 ================================================= -->
+
+            <div class="rr-admin-stat-grid">
+
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            TOTAL ORDERS
+                        </span>
+
+                        <i class="bi bi-receipt"></i>
+
+                    </div>
+
+                    <strong id="admin-customer-orders-count">
+                        0
+                    </strong>
+
+                    <small>
+                        Orders placed
+                    </small>
+
+                </article>
+
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            TOTAL SPENT
+                        </span>
+
+                        <i class="bi bi-cash-stack"></i>
+
+                    </div>
+
+                    <strong id="admin-customer-total-spent">
+                        ৳0
+                    </strong>
+
+                    <small>
+                        Lifetime value
+                    </small>
+
+                </article>
+
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            LAST ORDER
+                        </span>
+
+                        <i class="bi bi-calendar-check"></i>
+
+                    </div>
+
+                    <strong id="admin-customer-last-order">
+                        —
+                    </strong>
+
+                    <small>
+                        Most recent order
+                    </small>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 CUSTOMER ORDERS
+                 ================================================= -->
+
+            <section class="rr-admin-panel">
+
+                <div class="rr-admin-panel-header">
+
+                    <div>
+
+                        <span class="rr-admin-panel-label">
+                            ORDER HISTORY
+                        </span>
+
+                        <h3>
+                            Customer Orders
+                        </h3>
+
+                    </div>
+
+
+                    <a
+                        href="/admin/orders"
+                        class="rr-admin-view-link"
+                    >
+                        All Orders
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="rr-admin-table-wrapper">
+
+                    <table
+                        class="rr-admin-table"
+                        id="admin-customer-orders-table"
+                    >
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    ORDER
+                                </th>
+
+                                <th>
+                                    DATE
+                                </th>
+
+                                <th>
+                                    ITEMS
+                                </th>
+
+                                <th>
+                                    TOTAL
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    ACTION
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="admin-customer-orders-body"></tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- Empty state -->
+
+                <div
+                    class="rr-admin-empty-state"
+                    id="admin-customer-orders-empty"
+                    hidden
+                >
+
+                    <i class="bi bi-receipt"></i>
+
+                    <h3>
+                        No orders found
+                    </h3>
+
+                    <p>
+                        This customer has not placed any orders yet.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         ADMIN SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/admin.js"
+    ></script>
+
+</body>
+
+</html>

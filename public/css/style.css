@@ -1,0 +1,90 @@
+/* =========================================================
+   ROADREADY
+   Global Design System
+   ========================================================= */
+
+:root {
+
+    /* Brand Colors */
+    --rr-primary: #e63946;
+    --rr-primary-dark: #c92f3b;
+
+    --rr-dark: #0b1628;
+    --rr-dark-secondary: #172238;
+
+    --rr-white: #ffffff;
+    --rr-light: #f5f6f8;
+    --rr-border: #e2e5ea;
+
+    /* Text */
+    --rr-text: #172033;
+    --rr-text-muted: #697386;
+
+    /* Typography */
+    --rr-font-main: Arial, sans-serif;
+
+    /* Layout */
+    --rr-container-width: 1200px;
+
+    /* Radius */
+    --rr-radius-sm: 6px;
+    --rr-radius-md: 10px;
+    --rr-radius-lg: 16px;
+
+    /* Shadows */
+    --rr-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --rr-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   RESET / GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--rr-light);
+    color: var(--rr-text);
+
+    font-family: var(--rr-font-main);
+
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* Desktop readability baseline */
+@media(min-width:901px){
+  body{font-size:16px;line-height:1.55}
+  p{font-size:15px;line-height:1.7}
+  .rr-nav-link{font-size:14px}
+  .rr-topbar-message,.rr-topbar-links{font-size:13px}
+  button,input,select,textarea{font-size:14px}
+  .rr-section-header p,.rr-page-header p{font-size:15px}
+  .rr-section-eyebrow,.rr-page-eyebrow,.rr-admin-eyebrow{font-size:12px;letter-spacing:.12em}
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Details | RoadReady</title>
+
+    <meta
+        name="description"
+        content="View the details of your RoadReady order."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+        <section class="rr-account-page">
+
+            <div class="rr-account-container">
+
+
+                <!-- PAGE HEADER -->
+
+                <div class="rr-order-details-header">
+
+                    <div>
+
+                        <a
+                            href="/account/orders"
+                            class="rr-back-link"
+                        >
+                            <i class="bi bi-arrow-left"></i>
+                            Back to Orders
+                        </a>
+
+                        <span class="rr-section-eyebrow">
+                            ORDER DETAILS
+                        </span>
+
+                        <h1 id="order-title"></h1>
+
+                        <p id="order-date"></p>
+
+                    </div>
+
+                    <span
+                        id="order-status"
+                        class="rr-order-status"
+                    ></span>
+
+                </div>
+
+
+                <!-- ORDER CONTENT -->
+
+                <div class="rr-order-details-layout">
+
+
+                    <!-- MAIN CONTENT -->
+
+                    <div class="rr-order-details-main">
+
+
+                        <!-- ORDER ITEMS -->
+
+                        <div class="rr-order-details-card">
+
+                            <div class="rr-order-details-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        ORDER ITEMS
+                                    </span>
+
+                                    <h2>
+                                        Your Products
+                                    </h2>
+
+                                </div>
+
+                                <span
+                                    id="order-item-count"
+                                    class="rr-order-item-count"
+                                ></span>
+
+                            </div>
+
+
+                            <div
+                                id="order-items"
+                                class="rr-order-items"
+                            ></div>
+
+                        </div>
+
+
+
+                        <!-- ORDER STATUS -->
+
+                        <div class="rr-order-details-card">
+
+                            <div class="rr-order-details-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        ORDER STATUS
+                                    </span>
+
+                                    <h2>
+                                        Delivery Progress
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                id="order-timeline"
+                                class="rr-order-timeline"
+                            ></div>
+
+                        </div>
+
+
+
+                        <!-- SHIPPING -->
+
+                        <div class="rr-order-details-card">
+
+                            <div class="rr-order-details-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        SHIPPING
+                                    </span>
+
+                                    <h2>
+                                        Delivery Address
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                id="order-address"
+                                class="rr-order-address"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ORDER SUMMARY -->
+
+                    <aside class="rr-order-summary">
+
+                        <div class="rr-order-details-card">
+
+                            <div class="rr-order-details-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        SUMMARY
+                                    </span>
+
+                                    <h2>
+                                        Order Total
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                id="order-summary-lines"
+                                class="rr-order-summary-lines"
+                            ></div>
+
+
+                            <div class="rr-order-summary-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong id="order-total"></strong>
+
+                            </div>
+
+
+                            <div class="rr-order-payment">
+
+                                <span>
+                                    Payment Status
+                                </span>
+
+                                <strong id="order-payment-status"></strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- HELP -->
+
+                        <div class="rr-order-help-card">
+
+                            <i class="bi bi-headset"></i>
+
+                            <div>
+
+                                <strong>
+                                    Need Help?
+                                </strong>
+
+                                <span>
+                                    Have a question about this order?
+                                </span>
+
+                            </div>
+
+                            <a href="/contact">
+                                Contact Support
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         PAGE SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/order-details.js"
+    ></script>
+
+</body>
+
+</html>

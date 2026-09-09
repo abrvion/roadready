@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Confirmed | RoadReady</title>
+
+    <meta
+        name="description"
+        content="Your RoadReady motorcycle parts order has been confirmed."
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             ORDER CONFIRMATION
+             ================================================= -->
+
+        <section class="rr-order-confirmation">
+
+            <div class="rr-container">
+
+
+                <!-- =================================================
+                     SUCCESS
+                     ================================================= -->
+
+                <div class="rr-order-success">
+
+                    <div class="rr-order-success-icon">
+
+                        <i class="bi bi-check-lg"></i>
+
+                    </div>
+
+
+                    <span class="rr-section-eyebrow">
+                        ORDER CONFIRMED
+                    </span>
+
+
+                    <h1>
+                        Thanks for Your Order!
+                    </h1>
+
+
+                    <p>
+                        Your order has been successfully placed.
+                        We'll prepare it for delivery and keep you updated.
+                    </p>
+
+
+                    <div class="rr-order-number">
+
+                        <span>
+                            Order Number
+                        </span>
+
+                        <strong id="order-number">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOADING
+                     ================================================= -->
+
+                <div
+                    class="rr-order-loading"
+                    id="order-loading"
+                >
+
+                    <i class="bi bi-arrow-repeat"></i>
+
+                    <span>
+                        Loading your order...
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ERROR
+                     ================================================= -->
+
+                <div
+                    class="rr-order-error"
+                    id="order-error"
+                    hidden
+                >
+
+                    <i class="bi bi-exclamation-circle"></i>
+
+                    <p id="order-error-message">
+                        Failed to load your order.
+                    </p>
+
+                    <a
+                        href="/account/orders"
+                        class="rr-order-error-button"
+                    >
+                        View My Orders
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ORDER CONTENT
+                     ================================================= -->
+
+                <div
+                    class="rr-order-layout"
+                    id="order-content"
+                    hidden
+                >
+
+
+                    <!-- =================================================
+                         ORDER DETAILS
+                         ================================================= -->
+
+                    <div class="rr-order-details">
+
+
+                        <!-- =================================================
+                             ORDER ITEMS
+                             ================================================= -->
+
+                        <div class="rr-order-card">
+
+                            <div class="rr-order-card-header">
+
+                                <div>
+
+                                    <span class="rr-order-card-eyebrow">
+                                        ORDER DETAILS
+                                    </span>
+
+                                    <h2>
+                                        Your Items
+                                    </h2>
+
+                                </div>
+
+                                <span
+                                    class="rr-order-status"
+                                    id="order-status"
+                                >
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="rr-order-items"
+                                id="order-items"
+                            ></div>
+
+
+                            <div class="rr-order-divider"></div>
+
+
+                            <div class="rr-order-summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <strong id="order-subtotal">
+                                    ৳0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="rr-order-summary-row">
+
+                                <span>
+                                    Delivery
+                                </span>
+
+                                <strong id="order-delivery">
+                                    ৳0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="rr-order-divider"></div>
+
+
+                            <div class="rr-order-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong id="order-total">
+                                    ৳0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             DELIVERY INFORMATION
+                             ================================================= -->
+
+                        <div class="rr-order-card">
+
+                            <div class="rr-order-card-header">
+
+                                <div>
+
+                                    <span class="rr-order-card-eyebrow">
+                                        DELIVERY
+                                    </span>
+
+                                    <h2>
+                                        Delivery Information
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-order-info-grid">
+
+
+                                <div class="rr-order-info-block">
+
+                                    <span>
+                                        Deliver To
+                                    </span>
+
+                                    <strong id="shipping-name">
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="rr-order-info-block">
+
+                                    <span>
+                                        Phone
+                                    </span>
+
+                                    <strong id="shipping-phone">
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="rr-order-info-block">
+
+                                    <span>
+                                        Address
+                                    </span>
+
+                                    <strong id="shipping-address">
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="rr-order-info-block">
+
+                                    <span>
+                                        Delivery Method
+                                    </span>
+
+                                    <strong id="shipping-method">
+                                        Standard Delivery · 2–5 business days
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             PAYMENT
+                             ================================================= -->
+
+                        <div class="rr-order-card">
+
+                            <div class="rr-order-card-header">
+
+                                <div>
+
+                                    <span class="rr-order-card-eyebrow">
+                                        PAYMENT
+                                    </span>
+
+                                    <h2>
+                                        Payment Information
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="rr-order-payment">
+
+                                <div class="rr-order-payment-icon">
+
+                                    <i class="bi bi-cash-stack"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Cash on Delivery
+                                    </strong>
+
+                                    <span>
+                                        Payment will be collected when your order arrives.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         RIGHT SIDE
+                         ================================================= -->
+
+                    <aside class="rr-order-sidebar">
+
+
+                        <div class="rr-order-next-card">
+
+                            <div class="rr-order-next-icon">
+
+                                <i class="bi bi-box-seam"></i>
+
+                            </div>
+
+
+                            <h2>
+                                What Happens Next?
+                            </h2>
+
+
+                            <div class="rr-order-steps">
+
+
+                                <div class="rr-order-step">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            Order Processing
+                                        </strong>
+
+                                        <p>
+                                            We'll prepare your items.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="rr-order-step">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            Order Shipped
+                                        </strong>
+
+                                        <p>
+                                            Your package is on its way.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="rr-order-step">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            Delivered
+                                        </strong>
+
+                                        <p>
+                                            Your order arrives at your door.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <a
+                                href="/shop"
+                                class="rr-order-continue"
+                            >
+
+                                Continue Shopping
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         PAGE SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/order-confirmation.js"
+    ></script>
+
+</body>
+
+</html>

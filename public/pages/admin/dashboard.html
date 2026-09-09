@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | RoadReady</title>
+
+    <meta
+        name="description"
+        content="RoadReady administration dashboard."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body class="rr-admin-body">
+
+
+    <!-- =====================================================
+         ADMIN SIDEBAR
+         ===================================================== -->
+
+    <aside class="rr-admin-sidebar">
+
+        <div class="rr-admin-brand">
+
+            <a href="/" class="rr-logo">
+
+                <span class="rr-logo-mark">
+                    <i class="bi bi-speedometer2"></i>
+                </span>
+
+                <span class="rr-logo-text">
+                    ROAD<span>READY</span>
+                </span>
+
+            </a>
+
+            <span class="rr-admin-label">
+                ADMIN
+            </span>
+
+        </div>
+
+
+        <nav class="rr-admin-nav">
+
+            <span class="rr-admin-nav-label">
+                MANAGEMENT
+            </span>
+
+
+            <a
+                href="/admin"
+                class="rr-admin-nav-link is-active"
+            >
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a
+                href="/admin/products"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-box-seam"></i>
+                <span>Products</span>
+            </a>
+
+
+            <a
+                href="/admin/categories"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-tags"></i>
+                <span>Categories</span>
+            </a>
+            <a
+                href="/admin/bikes"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-bicycle"></i>
+                <span>Bike Finder</span>
+            </a>
+
+
+<a
+                href="/admin/orders"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-receipt"></i>
+                <span>Orders</span>
+            </a>
+
+
+            <a
+                href="/admin/customers"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-people"></i>
+                <span>Customers</span>
+            </a>
+
+
+            <span class="rr-admin-nav-label">
+                STORE
+            </span>
+
+
+            <a
+                href="/shop"
+                class="rr-admin-nav-link"
+            >
+                <i class="bi bi-shop"></i>
+                <span>View Store</span>
+            </a>
+</nav>
+
+
+        <div class="rr-admin-sidebar-bottom">
+
+            <a
+                href="/account/profile"
+                class="rr-admin-profile"
+            >
+
+                <span class="rr-admin-profile-icon">
+                    <i class="bi bi-person"></i>
+                </span>
+
+                <span>
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="rr-admin-logout"
+                id="admin-logout"
+            >
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+         ===================================================== -->
+
+    <div
+        class="rr-admin-overlay"
+        id="admin-overlay"
+    ></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="rr-admin-main">
+
+
+        <!-- =================================================
+             TOPBAR
+             ================================================= -->
+
+        <header class="rr-admin-topbar">
+
+            <div class="rr-admin-topbar-left">
+
+                <button
+                    type="button"
+                    class="rr-admin-menu-button"
+                    id="admin-menu-button"
+                    aria-label="Open admin menu"
+                >
+                    <i class="bi bi-list"></i>
+                </button>
+
+
+                <div>
+
+                    <span class="rr-admin-eyebrow">
+                        ADMIN PANEL
+                    </span>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="rr-admin-topbar-actions">
+
+                <a
+                    href="/shop"
+                    target="_blank"
+                    class="rr-admin-store-link"
+                >
+                    <i class="bi bi-box-arrow-up-right"></i>
+                    View Store
+                </a>
+
+                <button
+                    type="button"
+                    class="rr-admin-notification"
+                    aria-label="Notifications"
+                >
+                    <i class="bi bi-bell"></i>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+             ================================================= -->
+
+        <section class="rr-admin-content">
+
+
+            <!-- Welcome -->
+
+            <div class="rr-admin-welcome">
+
+                <div>
+
+                    <span class="rr-admin-eyebrow">
+                        OVERVIEW
+                    </span>
+
+                    <h2>
+                        Good day, Admin.
+                    </h2>
+
+                    <p>
+                        Here's what's happening with your store.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="/admin/product/new"
+                    class="rr-admin-primary-button"
+                >
+                    <i class="bi bi-plus-lg"></i>
+                    Add Product
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 STAT CARDS
+                 ================================================= -->
+
+            <div class="rr-admin-stat-grid">
+
+
+                <!-- Revenue -->
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            TOTAL REVENUE
+                        </span>
+
+                        <i class="bi bi-currency-dollar"></i>
+
+                    </div>
+
+                    <strong id="admin-total-revenue">—</strong>
+
+                    <small>Revenue from non-cancelled orders</small>
+
+                </article>
+
+
+
+                <!-- Orders -->
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            TOTAL ORDERS
+                        </span>
+
+                        <i class="bi bi-receipt"></i>
+
+                    </div>
+
+                    <strong id="admin-total-orders">—</strong>
+
+                    <small id="admin-orders-supporting">All recorded orders</small>
+
+                </article>
+
+
+
+                <!-- Customers -->
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            CUSTOMERS
+                        </span>
+
+                        <i class="bi bi-people"></i>
+
+                    </div>
+
+                    <strong id="admin-total-customers">—</strong>
+
+                    <small id="admin-customers-supporting">Registered customers</small>
+
+                </article>
+
+
+
+                <!-- Products -->
+
+                <article class="rr-admin-stat-card">
+
+                    <div class="rr-admin-stat-top">
+
+                        <span>
+                            PRODUCTS
+                        </span>
+
+                        <i class="bi bi-box-seam"></i>
+
+                    </div>
+
+                    <strong id="admin-total-products">—</strong>
+
+                    <small id="admin-products-supporting">Loading inventory health…</small>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MAIN DASHBOARD GRID
+                 ================================================= -->
+
+            <div class="rr-admin-dashboard-grid">
+
+
+                <!-- =================================================
+                     RECENT ORDERS
+                     ================================================= -->
+
+                <section class="rr-admin-panel rr-admin-orders-panel">
+
+                    <div class="rr-admin-panel-header">
+
+                        <div>
+
+                            <span class="rr-admin-panel-label">
+                                ORDERS
+                            </span>
+
+                            <h3>
+                                Recent Orders
+                            </h3>
+
+                        </div>
+
+
+                        <a
+                            href="/admin/orders"
+                            class="rr-admin-view-link"
+                        >
+                            View All
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="rr-admin-table-wrapper">
+
+                        <table class="rr-admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        ORDER
+                                    </th>
+
+                                    <th>
+                                        CUSTOMER
+                                    </th>
+
+                                    <th>
+                                        DATE
+                                    </th>
+
+                                    <th>
+                                        TOTAL
+                                    </th>
+
+                                    <th>
+                                        STATUS
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="admin-dashboard-orders-body"></tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     QUICK ACTIONS
+                     ================================================= -->
+
+                <section class="rr-admin-panel rr-admin-quick-panel">
+
+                    <div class="rr-admin-panel-header">
+
+                        <div>
+
+                            <span class="rr-admin-panel-label">
+                                SHORTCUTS
+                            </span>
+
+                            <h3>
+                                Quick Actions
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="rr-admin-quick-actions">
+
+
+                        <a
+                            href="/admin/product/new"
+                            class="rr-admin-quick-action"
+                        >
+
+                            <span>
+                                <i class="bi bi-plus-circle"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Add Product
+                                </strong>
+
+                                <small>
+                                    Create a new product
+                                </small>
+
+                            </div>
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="/admin/products"
+                            class="rr-admin-quick-action"
+                        >
+
+                            <span>
+                                <i class="bi bi-box-seam"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Manage Products
+                                </strong>
+
+                                <small>
+                                    View your inventory
+                                </small>
+
+                            </div>
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="/admin/orders"
+                            class="rr-admin-quick-action"
+                        >
+
+                            <span>
+                                <i class="bi bi-receipt"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Manage Orders
+                                </strong>
+
+                                <small>
+                                    Review customer orders
+                                </small>
+
+                            </div>
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="/admin/customers"
+                            class="rr-admin-quick-action"
+                        >
+
+                            <span>
+                                <i class="bi bi-people"></i>
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Customers
+                                </strong>
+
+                                <small>
+                                    View customer accounts
+                                </small>
+
+                            </div>
+
+                            <i class="bi bi-chevron-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOWER GRID
+                 ================================================= -->
+
+            <div class="rr-admin-lower-grid">
+
+
+                <!-- Best Sellers -->
+
+                <section class="rr-admin-panel">
+
+                    <div class="rr-admin-panel-header">
+
+                        <div>
+
+                            <span class="rr-admin-panel-label">
+                                PRODUCTS
+                            </span>
+
+                            <h3>
+                                Best Sellers
+                            </h3>
+
+                        </div>
+
+
+                        <a
+                            href="/admin/products"
+                            class="rr-admin-view-link"
+                        >
+                            Manage
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="rr-admin-product-list" id="admin-best-sellers-list"></div>
+
+                </section>
+
+
+
+                <!-- Inventory -->
+
+                <section class="rr-admin-panel">
+
+                    <div class="rr-admin-panel-header">
+
+                        <div>
+
+                            <span class="rr-admin-panel-label">
+                                INVENTORY
+                            </span>
+
+                            <h3>
+                                Stock Overview
+                            </h3>
+
+                        </div>
+
+                        <a
+                            href="/admin/products"
+                            class="rr-admin-view-link"
+                        >
+                            View Products
+                        </a>
+
+                    </div>
+
+
+                    <div class="rr-admin-inventory">
+
+
+                        <div class="rr-admin-inventory-stat">
+
+                            <span class="rr-admin-inventory-icon">
+                                <i class="bi bi-box"></i>
+                            </span>
+
+                            <div>
+
+                                <strong id="admin-inventory-in-stock">—</strong>
+
+                                <span>
+                                    In Stock
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="rr-admin-inventory-stat">
+
+                            <span class="rr-admin-inventory-icon">
+                                <i class="bi bi-exclamation-triangle"></i>
+                            </span>
+
+                            <div>
+
+                                <strong id="admin-inventory-low-stock">—</strong>
+
+                                <span>
+                                    Low Stock
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="rr-admin-inventory-stat">
+
+                            <span class="rr-admin-inventory-icon">
+                                <i class="bi bi-x-circle"></i>
+                            </span>
+
+                            <div>
+
+                                <strong id="admin-inventory-out-stock">—</strong>
+
+                                <span>
+                                    Out of Stock
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         ADMIN SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/admin.js"
+    ></script>
+
+</body>
+
+</html>
+

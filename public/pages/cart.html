@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Cart | RoadReady</title>
+
+    <meta
+        name="description"
+        content="Review your RoadReady motorcycle parts, accessories and gear before checkout."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Main Styles -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             CART HEADER
+             ================================================= -->
+
+        <section class="rr-cart-header">
+
+            <div class="rr-container">
+
+                <span class="rr-section-eyebrow">
+                    YOUR CART
+                </span>
+
+                <h1>
+                    Review Your Items
+                </h1>
+
+                <p>
+                    Check your products before moving to checkout.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CART
+             ================================================= -->
+
+        <section class="rr-cart" id="cart-section">
+
+            <div class="rr-container">
+
+                <div class="rr-cart-layout">
+
+
+                    <!-- =========================================
+                         CART ITEMS
+                         ========================================= -->
+
+                    <div class="rr-cart-items">
+
+                        <div class="rr-cart-items-header">
+
+                            <h2>
+                                Cart Items
+                            </h2>
+
+                            <span id="cart-item-count">
+                                0 Items
+                            </span>
+
+                        </div>
+
+
+                        <!--
+                            Real cart items will be inserted
+                            here by cart.js
+                        -->
+
+                        <div id="cart-items-container"></div>
+
+
+                        <!-- Continue shopping -->
+
+                        <a
+                            href="/shop"
+                            class="rr-continue-shopping"
+                        >
+
+                            <i class="bi bi-arrow-left"></i>
+
+                            Continue Shopping
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         ORDER SUMMARY
+                         ========================================= -->
+
+                    <aside class="rr-cart-summary">
+
+                        <h2>
+                            Order Summary
+                        </h2>
+
+
+                        <div class="rr-cart-summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong id="cart-subtotal">
+                                ৳0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="rr-cart-summary-row">
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong id="cart-delivery">
+                                ৳0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="rr-cart-summary-divider"></div>
+
+
+                        <div class="rr-cart-summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="cart-total">
+                                ৳0
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="rr-checkout-button"
+                            id="checkout-button"
+                        >
+
+                            Proceed to Checkout
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+
+                        <div class="rr-cart-secure">
+
+                            <i class="bi bi-shield-check"></i>
+
+                            <span>
+                                Secure checkout
+                            </span>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EMPTY CART
+             ================================================= -->
+
+        <section
+            class="rr-empty-cart"
+            id="empty-cart"
+            hidden
+        >
+
+            <div class="rr-container">
+
+                <div class="rr-empty-cart-content">
+
+                    <div class="rr-empty-cart-icon">
+
+                        <i class="bi bi-bag"></i>
+
+                    </div>
+
+                    <h2>
+                        Your Cart Is Empty
+                    </h2>
+
+                    <p>
+                        Looks like you haven't added anything
+                        to your cart yet.
+                    </p>
+
+                    <a
+                        href="/shop"
+                        class="rr-empty-cart-button"
+                    >
+                        Start Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/cart.js"
+    ></script>
+
+</body>
+
+</html>
+

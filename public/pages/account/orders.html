@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Orders | RoadReady</title>
+
+    <meta
+        name="description"
+        content="View your RoadReady order history and track your purchases."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+        <section class="rr-account-page">
+
+            <div class="rr-account-container">
+
+
+                <!-- =================================================
+                     PAGE HEADER
+                     ================================================= -->
+
+                <div class="rr-account-header">
+
+                    <div>
+
+                        <span class="rr-section-eyebrow">
+                            MY ACCOUNT
+                        </span>
+
+                        <h1>
+                            My Orders.
+                        </h1>
+
+                        <p>
+                            View your previous purchases and keep track
+                            of your RoadReady orders.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="/shop"
+                        class="rr-account-logout"
+                    >
+                        <i class="bi bi-bag"></i>
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ACCOUNT LAYOUT
+                     ================================================= -->
+
+                <div class="rr-account-layout">
+
+
+                    <!-- =================================================
+                         SIDEBAR
+                         ================================================= -->
+
+                    <aside class="rr-account-sidebar">
+
+                        <nav class="rr-account-nav">
+
+                            <a href="/account">
+
+                                <i class="bi bi-grid"></i>
+
+                                <span>
+                                    Dashboard
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="/account/orders"
+                                class="is-active"
+                            >
+
+                                <i class="bi bi-box-seam"></i>
+
+                                <span>
+                                    My Orders
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/wishlist">
+
+                                <i class="bi bi-heart"></i>
+
+                                <span>
+                                    Wishlist
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/addresses">
+
+                                <i class="bi bi-geo-alt"></i>
+
+                                <span>
+                                    Addresses
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/profile">
+
+                                <i class="bi bi-person"></i>
+
+                                <span>
+                                    Account Details
+                                </span>
+
+                            </a>
+
+                        </nav>
+
+
+                        <div class="rr-account-sidebar-help">
+
+                            <i class="bi bi-headset"></i>
+
+                            <div>
+
+                                <strong>
+                                    Need Help?
+                                </strong>
+
+                                <span>
+                                    We're here for you.
+                                </span>
+
+                            </div>
+
+                            <a href="/contact">
+                                Contact Us
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+
+
+                    <!-- =================================================
+                         ORDERS CONTENT
+                         ================================================= -->
+
+                    <div class="rr-account-content">
+
+
+                        <!-- Order Filters -->
+
+                        <div class="rr-orders-toolbar">
+
+                            <div>
+
+                                <span class="rr-category-label">
+                                    ORDER HISTORY
+                                </span>
+
+                                <h2>
+                                    Your Purchases
+                                </h2>
+
+                            </div>
+
+
+                            <label
+                                class="rr-orders-filter"
+                                for="order-status-filter"
+                            >
+
+                                <span>
+                                    Filter
+                                </span>
+
+                                <select id="order-status-filter">
+
+                                    <option value="all">
+                                        All Orders
+                                    </option>
+
+                                    <option value="processing">
+                                        Processing
+                                    </option>
+
+                                    <option value="shipped">
+                                        Shipped
+                                    </option>
+
+                                    <option value="delivered">
+                                        Delivered
+                                    </option>
+
+                                    <option value="cancelled">
+                                        Cancelled
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             ORDER LIST
+                             ================================================= -->
+
+                        
+<div class="rr-orders-list" id="orders-list">
+
+    <!-- Demo Order -->
+    <!-- This will eventually be generated from backend data -->
+
+    <article class="rr-order-card">
+
+        <div class="rr-order-card-main">
+
+            <div class="rr-order-card-icon">
+                <i class="bi bi-box-seam"></i>
+            </div>
+
+
+            <div class="rr-order-card-info">
+
+                <span class="rr-order-card-label">
+                    ORDER
+                </span>
+
+                <h3>
+                    #RR-10001
+                </h3>
+
+                <p>
+                    August 31, 2026 · 2 Items
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="rr-order-card-status">
+
+            <span class="rr-order-status rr-order-status-processing">
+                Processing
+            </span>
+
+            <strong>
+                ৳2,200
+            </strong>
+
+        </div>
+
+
+        <a
+            href="/account/order/?id=RR-10001"
+            class="rr-order-card-details"
+        >
+            View Details
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </article>
+
+
+</div>
+
+
+
+
+                            <!-- Empty State -->
+
+                            <div class="rr-account-empty">
+
+                                <div class="rr-account-empty-icon">
+
+                                    <i class="bi bi-box-seam"></i>
+
+                                </div>
+
+                                <h3>
+                                    No Orders Yet
+                                </h3>
+
+                                <p>
+                                    You haven't placed an order yet.
+                                    Once you make a purchase, your
+                                    order history will appear here.
+                                </p>
+
+                                <a
+                                    href="/shop"
+                                    class="rr-account-shop-button"
+                                >
+                                    Explore Products
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         PAGE SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/orders.js"
+    ></script>
+
+</body>
+
+</html>
+

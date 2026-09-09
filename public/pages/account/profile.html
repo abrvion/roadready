@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile | RoadReady</title>
+
+    <meta
+        name="description"
+        content="Manage your RoadReady account profile and personal information."
+    >
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- RoadReady Styles -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div id="site-header"></div>
+
+
+
+    <main>
+
+        <section class="rr-account-page">
+
+            <div class="rr-account-container">
+
+
+                <!-- =================================================
+                     PAGE HEADER
+                     ================================================= -->
+
+                <div class="rr-account-header">
+
+                    <div>
+
+                        <span class="rr-section-eyebrow">
+                            MY ACCOUNT
+                        </span>
+
+                        <h1>
+                            Account Details.
+                        </h1>
+
+                        <p>
+                            Manage your personal information and
+                            account preferences.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="/shop"
+                        class="rr-account-logout"
+                    >
+                        <i class="bi bi-bag"></i>
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ACCOUNT LAYOUT
+                     ================================================= -->
+
+                <div class="rr-account-layout">
+
+
+                    <!-- =================================================
+                         SIDEBAR
+                         ================================================= -->
+
+                    <aside class="rr-account-sidebar">
+
+                        <nav class="rr-account-nav">
+
+                            <a href="/account">
+
+                                <i class="bi bi-grid"></i>
+
+                                <span>
+                                    Dashboard
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/orders">
+
+                                <i class="bi bi-box-seam"></i>
+
+                                <span>
+                                    My Orders
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/wishlist">
+
+                                <i class="bi bi-heart"></i>
+
+                                <span>
+                                    Wishlist
+                                </span>
+
+                            </a>
+
+
+                            <a href="/account/addresses">
+
+                                <i class="bi bi-geo-alt"></i>
+
+                                <span>
+                                    Addresses
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="/account/profile"
+                                class="is-active"
+                            >
+
+                                <i class="bi bi-person"></i>
+
+                                <span>
+                                    Account Details
+                                </span>
+
+                            </a>
+
+                        </nav>
+
+
+                        <div class="rr-account-sidebar-help">
+
+                            <i class="bi bi-headset"></i>
+
+                            <div>
+
+                                <strong>
+                                    Need Help?
+                                </strong>
+
+                                <span>
+                                    We're here for you.
+                                </span>
+
+                            </div>
+
+                            <a href="/contact">
+                                Contact Us
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+
+
+                    <!-- =================================================
+                         PROFILE CONTENT
+                         ================================================= -->
+
+                    <div class="rr-account-content">
+
+
+                        <!-- Profile Information -->
+
+                        <div class="rr-profile-card">
+
+                            <div class="rr-profile-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        PERSONAL INFORMATION
+                                    </span>
+
+                                    <h2>
+                                        Your Profile
+                                    </h2>
+
+                                    <p>
+                                        Keep your account information
+                                        up to date.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="rr-profile-avatar">
+
+                                    <i class="bi bi-person"></i>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Profile Form -->
+
+                            <form
+                                id="profile-form"
+                                class="rr-profile-form"
+                            >
+
+
+                                <!-- First Name -->
+
+                                <div class="rr-form-field">
+
+                                    <label for="profile-first-name">
+                                        First Name
+                                    </label>
+
+                                    <div class="rr-auth-input">
+
+                                        <i class="bi bi-person"></i>
+
+                                        <input
+                                            type="text"
+                                            id="profile-first-name"
+                                            name="firstName"
+                                            placeholder="Enter your first name"
+                                            autocomplete="given-name"
+                                            required
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Last Name -->
+
+                                <div class="rr-form-field">
+
+                                    <label for="profile-last-name">
+                                        Last Name
+                                    </label>
+
+                                    <div class="rr-auth-input">
+
+                                        <i class="bi bi-person"></i>
+
+                                        <input
+                                            type="text"
+                                            id="profile-last-name"
+                                            name="lastName"
+                                            placeholder="Enter your last name"
+                                            autocomplete="family-name"
+                                            required
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Email -->
+
+                                <div class="rr-form-field">
+
+                                    <label for="profile-email">
+                                        Email Address
+                                    </label>
+
+                                    <div class="rr-auth-input">
+
+                                        <i class="bi bi-envelope"></i>
+
+                                        <input
+                                            type="email"
+                                            id="profile-email"
+                                            name="email"
+                                            placeholder="you@example.com"
+                                            autocomplete="email"
+                                            required
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Phone -->
+
+                                <div class="rr-form-field">
+
+                                    <label for="profile-phone">
+                                        Phone Number
+                                    </label>
+
+                                    <div class="rr-auth-input">
+
+                                        <i class="bi bi-telephone"></i>
+
+                                        <input
+                                            type="tel"
+                                            id="profile-phone"
+                                            name="phone"
+                                            placeholder="+880 1XXXXXXXXX"
+                                            autocomplete="tel"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Submit -->
+
+                                <div class="rr-profile-form-actions">
+
+                                    <button
+                                        type="submit"
+                                        class="rr-auth-submit"
+                                    >
+                                        Save Changes
+                                        <i class="bi bi-check2"></i>
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+
+                        <!-- Password Section -->
+
+                        <div class="rr-profile-card rr-profile-password-card">
+
+                            <div class="rr-profile-card-header">
+
+                                <div>
+
+                                    <span class="rr-category-label">
+                                        SECURITY
+                                    </span>
+
+                                    <h2>
+                                        Password
+                                    </h2>
+
+                                    <p>
+                                        Update your password to keep
+                                        your account secure.
+                                    </p>
+
+                                </div>
+
+                                <span class="rr-profile-security-icon">
+                                    <i class="bi bi-shield-lock"></i>
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="/forgot-password"
+                                class="rr-profile-password-link"
+                            >
+                                Change Password
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         PAGE SCRIPT
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/js/pages/profile.js"
+    ></script>
+
+</body>
+
+</html>
+

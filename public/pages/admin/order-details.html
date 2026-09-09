@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Details | RoadReady Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body class="rr-admin-body">
+
+    <aside class="rr-admin-sidebar">
+
+        <div class="rr-admin-brand">
+
+            <a href="/" class="rr-logo">
+
+                <span class="rr-logo-mark">
+                    <i class="bi bi-speedometer2"></i>
+                </span>
+
+                <span class="rr-logo-text">
+                    ROAD<span>READY</span>
+                </span>
+
+            </a>
+
+            <span class="rr-admin-label">
+                ADMIN
+            </span>
+
+        </div>
+
+
+        <nav class="rr-admin-nav">
+
+            <span class="rr-admin-nav-label">
+                MANAGEMENT
+            </span>
+
+            <a href="/admin" class="rr-admin-nav-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/admin/products" class="rr-admin-nav-link">
+                <i class="bi bi-box-seam"></i>
+                <span>Products</span>
+            </a>
+
+            <a href="/admin/categories" class="rr-admin-nav-link">
+                <i class="bi bi-tags"></i>
+                <span>Categories</span>
+            </a>
+
+            <a href="/admin/bikes" class="rr-admin-nav-link">
+                <i class="bi bi-bicycle"></i>
+                <span>Bike Finder</span>
+            </a>
+
+            <a
+                href="/admin/orders"
+                class="rr-admin-nav-link is-active"
+            >
+                <i class="bi bi-receipt"></i>
+                <span>Orders</span>
+            </a>
+
+            <a href="/admin/customers" class="rr-admin-nav-link">
+                <i class="bi bi-people"></i>
+                <span>Customers</span>
+            </a>
+
+
+            <span class="rr-admin-nav-label">
+                STORE
+            </span>
+
+            <a href="/shop" class="rr-admin-nav-link">
+                <i class="bi bi-shop"></i>
+                <span>View Store</span>
+            </a>
+
+        </nav>
+
+
+        <div class="rr-admin-sidebar-bottom">
+
+            <a
+                href="/account/profile"
+                class="rr-admin-profile"
+            >
+                <span class="rr-admin-profile-icon">
+                    <i class="bi bi-person"></i>
+                </span>
+
+                <span>
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </span>
+            </a>
+
+
+            <button
+                type="button"
+                class="rr-admin-logout"
+                id="admin-logout"
+            >
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div
+        class="rr-admin-overlay"
+        id="admin-overlay"
+    ></div>
+
+
+    <main class="rr-admin-main">
+
+        <header class="rr-admin-topbar">
+
+            <button
+                type="button"
+                class="rr-admin-menu-button"
+                id="admin-menu-button"
+                aria-label="Open admin menu"
+            >
+                <i class="bi bi-list"></i>
+            </button>
+
+
+            <div class="rr-admin-topbar-title">
+
+                <span>
+                    Orders
+                </span>
+
+                <strong>
+                    Order Details
+                </strong>
+
+            </div>
+
+        </header>
+
+
+        <section class="rr-admin-content rr-admin-order-details">
+
+            <div class="rr-admin-page-header">
+
+                <div>
+
+                    <a
+                        href="/admin/orders"
+                        class="rr-admin-back-link"
+                    >
+                        <i class="bi bi-arrow-left"></i>
+                        Back to Orders
+                    </a>
+
+
+                    <span class="rr-admin-eyebrow">
+                        ORDER
+                    </span>
+
+
+                    <h2 id="admin-order-title">
+                        Loading order...
+                    </h2>
+
+
+                    <p id="admin-order-date">
+                        —
+                    </p>
+
+
+                    <p id="admin-order-time">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="rr-admin-order-header-status">
+
+                    <span
+                        class="rr-admin-status pending"
+                        id="admin-order-status"
+                    >
+                        Loading
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <section class="rr-admin-panel rr-admin-status-panel">
+
+                <div>
+
+                    <span class="rr-admin-panel-label">
+                        ORDER STATUS
+                    </span>
+
+                    <h3>
+                        Update order status
+                    </h3>
+
+                    <p>
+                        Change the current status of this order.
+                    </p>
+
+                </div>
+
+
+                <div class="rr-admin-status-control">
+
+                    <select id="admin-order-status-select">
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="processing">
+                            Processing
+                        </option>
+
+                        <option value="shipped">
+                            Shipped
+                        </option>
+
+                        <option value="delivered">
+                            Delivered
+                        </option>
+
+                        <option value="cancelled">
+                            Cancelled
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        type="button"
+                        class="rr-admin-primary-button"
+                        id="admin-update-order-status"
+                    >
+                        Update Status
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <div class="rr-admin-order-grid">
+
+                <div class="rr-admin-order-main">
+
+                    <section class="rr-admin-panel">
+
+                        <div class="rr-admin-panel-heading">
+
+                            <div>
+
+                                <span class="rr-admin-panel-label">
+                                    ITEMS
+                                </span>
+
+                                <h3>
+                                    Ordered Products
+                                </h3>
+
+                            </div>
+
+                            <span id="admin-order-item-count">
+                                —
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="rr-admin-order-items"
+                            id="admin-order-items-body"
+                        >
+                            <div class="rr-admin-order-item">
+
+                                <div class="rr-admin-order-item-info">
+
+                                    <strong>
+                                        Loading order items...
+                                    </strong>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="rr-admin-order-totals">
+
+                            <div>
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <strong id="admin-order-subtotal">
+                                    —
+                                </strong>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    Delivery
+                                </span>
+
+                                <strong id="admin-order-delivery">
+                                    —
+                                </strong>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong id="admin-order-total">
+                                    —
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <aside class="rr-admin-order-sidebar">
+
+                    <section class="rr-admin-panel">
+
+                        <span class="rr-admin-panel-label">
+                            CUSTOMER
+                        </span>
+
+
+                        <div class="rr-admin-order-customer">
+
+                            <span
+                                class="rr-admin-large-avatar"
+                                id="admin-order-customer-avatar"
+                            >
+                                CU
+                            </span>
+
+                            <div>
+
+                                <strong id="admin-order-customer-name">
+                                    —
+                                </strong>
+
+                                <span id="admin-order-customer-email">
+                                    —
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="rr-admin-customer-contact">
+
+                            <a
+                                id="admin-order-customer-phone-link"
+                                href="#"
+                            >
+                                <i class="bi bi-telephone"></i>
+
+                                <span id="admin-order-customer-phone">
+                                    —
+                                </span>
+                            </a>
+
+
+                            <a
+                                id="admin-order-customer-email-link"
+                                href="#"
+                            >
+                                <i class="bi bi-envelope"></i>
+
+                                <span id="admin-order-customer-email-contact">
+                                    —
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <section class="rr-admin-panel">
+
+                        <span class="rr-admin-panel-label">
+                            SHIPPING ADDRESS
+                        </span>
+
+
+                        <address class="rr-admin-address">
+
+                            <strong id="admin-order-shipping-name">
+                                —
+                            </strong>
+
+                            <span id="admin-order-shipping-phone">
+                                —
+                            </span>
+
+                            <span id="admin-order-shipping-address">
+                                —
+                            </span>
+
+                        </address>
+
+                    </section>
+
+
+                    <section class="rr-admin-panel">
+
+                        <span class="rr-admin-panel-label">
+                            PAYMENT
+                        </span>
+
+
+                        <div class="rr-admin-payment-summary">
+
+                            <div>
+
+                                <span>
+                                    Payment Method
+                                </span>
+
+                                <strong id="admin-order-payment-method">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Payment Status
+                                </span>
+
+                                <strong id="admin-order-payment-status">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Transaction
+                                </span>
+
+                                <strong id="admin-order-payment-reference">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Order Total
+                                </span>
+
+                                <strong id="admin-order-payment-total">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span
+                            class="rr-admin-payment-badge"
+                            id="admin-order-payment-badge"
+                        >
+                            —
+                        </span>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="/js/pages/admin.js"></script>
+
+</body>
+
+</html>
+
