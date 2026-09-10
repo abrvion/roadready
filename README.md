@@ -195,7 +195,7 @@ Additional project documentation is available in the `docs/` directory, includin
 
 ## 👨‍💻 Author
 
-**ABR / Ibrahim**
+**ABR / Rahim**
 
 RoadReady is a self-directed full-stack development project built to gain practical experience designing, developing, testing, and deploying a real-world e-commerce application.
 
