@@ -1,5 +1,7 @@
 # RoadReady 🏍️
 
+![roadready hero section](Screenshot 2026-09-10 222739.png)
+
 **RoadReady** is a full-stack e-commerce platform for motorcycle parts and accessories, built with a focus on real-world shopping workflows, database-driven functionality, and a responsive user experience.
 
 The platform provides customers with product browsing, accounts, shopping cart, checkout, orders, reviews, wishlists, and order tracking, alongside a dedicated administrative dashboard for managing the store.
